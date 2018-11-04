@@ -299,9 +299,10 @@ phyloseq_obj_qu <- subset_samples(phyloseq_obj, sample_source=="Ukey"|sample_sou
 plot_bar(phyloseq_obj_qu, x = "sample_source")
 ```
 
-```{r sample-source-abundance-u-and-q}
-# bar plot of sample source (keyboard key or finger) and Abundance of sequences
-
+```{r comparing-abundance-for-s-and-l-keys}
+# bar plot of samples from S and L keys and Abundance of sequences
+phyloseq_obj_sl <- subset_samples(phyloseq_obj, sample_source=="Skey"|sample_source=="Lkey")
+plot_bar(phyloseq_obj_sl, x = "sample_source")
 ```
 
 # Discussion
