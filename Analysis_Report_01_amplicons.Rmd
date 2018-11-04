@@ -305,6 +305,19 @@ phyloseq_obj_sl <- subset_samples(phyloseq_obj, sample_source=="Skey"|sample_sou
 plot_bar(phyloseq_obj_sl, x = "sample_source")
 ```
 
+```{r comparing-abundance-for-g-and-h-keys}
+# bar plot of samples from G and H keys and Abundance of sequences
+phyloseq_obj_gh <- subset_samples(phyloseq_obj, sample_source=="Gkey"|sample_source=="Hkey")
+plot_bar(phyloseq_obj_gh, x = "sample_source")
+```
+
+```{r comparing-abundance-for-e-and-o-keys}
+# bar plot of samples from E and O keys and Abundance of sequences
+phyloseq_obj_eo <- subset_samples(phyloseq_obj, sample_source=="Ekey"|sample_source=="Okey")
+plot_bar(phyloseq_obj_eo, x = "sample_source")
+```
+
+
 # Discussion
 
 Add around 2-3 pages interpreting your results and considering future directions one might take in analyzing these data.
