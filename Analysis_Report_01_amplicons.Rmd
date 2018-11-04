@@ -293,6 +293,16 @@ phyloseq_obj <- phyloseq(otu_table(sequence_table_nochim,
 # bar plot of sample source (keyboard key or finger) and Abundance of sequences
 plot_bar(phyloseq_obj, x = "sample_source")
 ```
+```{r comparing-abundance-for-q-and-u-keys}
+# bar plot of samples from Q and U keys and Abundance of sequences
+phyloseq_obj_qu <- subset_samples(phyloseq_obj, sample_source=="Ukey"|sample_source=="Qkey")
+plot_bar(phyloseq_obj_qu, x = "sample_source")
+```
+
+```{r sample-source-abundance-u-and-q}
+# bar plot of sample source (keyboard key or finger) and Abundance of sequences
+
+```
 
 # Discussion
 
