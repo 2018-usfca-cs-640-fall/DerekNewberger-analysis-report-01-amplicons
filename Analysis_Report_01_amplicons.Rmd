@@ -19,7 +19,7 @@ Add about half a page here. In this section instead of first person (I/we), use 
 
 ## Computational
 
-These are the methods you used. Should probably be at least a half of a page. At a very minimum should include citations for DADA2 [@callahan2016] and phyloseq [@mcmurdie2013]. Note that these don't count towards the five references you need to cite in the introduction.
+These are the methods you used. Should probably be at least a half of a page. At a very minimum should include citations for DADA2 [@callahan2016] and phyloseq [@mcmurdie2013]. Note that these don't count towards the five references you need to cite in the introduction. We will use the Ribosomal Database Project reference taxonomy to assign taxonomy to unkown sequences [@cole2008ribosomal]. 
 
 # Results
 
@@ -80,7 +80,7 @@ filenames_forward_reads <- file.path(path, filenames_forward_reads)
 ```
 
 ```{r check-quality-plots}
-# Plots the quality profiles of all twenty samples
+# Plots the quality profiles of the first twenty samples out of 115
 plotQualityProfile(filenames_forward_reads[1:20])
 ```
 
@@ -106,7 +106,7 @@ filtered_output <- filterAndTrim(fwd = filenames_forward_reads,
                                  truncQ = 2, # cut off if quality gets this low
                                  rm.phix = TRUE,
                                  compress = TRUE,
-                                 multithread = FALSE)
+                                 multithread = TRUE)
 ```
 
 ```{r filtered-read-counts-table}
@@ -207,7 +207,7 @@ kable(track)
 # made up of known sequences
 taxa <- assignTaxonomy(sequence_table_nochim,
                        "data/training/rdp_train_set_16.fa.gz",
-                       multithread = FALSE,
+                       multithread = TRUE,
                        tryRC = TRUE) # also check with seq reverse compliments
 
 # show the results of the taxonomy assignment
