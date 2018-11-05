@@ -132,7 +132,10 @@ dada_forward_reads <- dada(dereplicated_forward_reads,
 # check dada results
 # dada_forward_reads
 ```
-
+```{r make-sequence-table}
+# produce the 'site by species matrix'
+sequence_table <- makeSequenceTable(dada_forward_reads)
+```
 
 ```{r remove-chimeras}
 # Check for and remove chimeras
@@ -155,6 +158,17 @@ After removing chimeras, we were left with `r non_chimeric_reads`% of our cleane
 # sequence itself (which is rather confusing), because that's how DADA2 labels
 # it's columns (e.g. 'species')
 # function taken from https://github.com/benjjneb/dada2/issues/88
+export_taxa_table_and_seqs <- function(sequence_table_nochim,
+                                       file_seqtab,
+                                       file_seqs) {
+  seqtab_t <- as.data.frame(t(sequence_table_nochim)) # transpose to data frame
+  seqs <- row.names(seqtab_t) # extract rownames
+  row.names(seqtab_t) <- seqs # set rownames to sequences
+  outlist <- list(data_loaded = seqtab_t)
+  mctoolsr::export_taxa_table(outlist, file_seqtab) # write out an OTU table
+  seqs <- as.list(seqs)
+  seqinr::write.fasta(seqs, row.names(seqtab_t), file_seqs) # write out fasta
+ }
 
 # run the function, with the names of the files we want it to create
 # and where to put them
@@ -163,8 +177,21 @@ export_taxa_table_and_seqs(sequence_table_nochim,
                            "output/sequence_variants_seqs.fa")
 ```
 
+```{r assign-taxonomy}
+# assigns taxonomy to each sequence variant based on a supplied training set
+# made up of known sequences
+ taxa <- assignTaxonomy(sequence_table_nochim,
+                       "data/training/rdp_train_set_16.fa.gz",
+                       multithread = TRUE,
+                       tryRC = TRUE) # also check with seq reverse compliments
+```
 
 ```{r read-in-metadata-and-create-phyloseq}
+# read in the phylogeny, which was created from the fasta exported above
+# in Geneious by aligning the sequences with MAFFT and then building a
+# Maximum-Likelihood tree with RAxML
+ tree_in <- read_tree("output/sequence_variants_MAFFT_FastTree.newick")
+
 # Next we want to read in the metadata file so we can add that in too
 # This is not a csv file, so we have to use a slightly different syntax
 # here the `sep = "\t"` tells the function that the data are tab-delimited
@@ -188,8 +215,15 @@ phyloseq_obj <- phyloseq(otu_table(sequence_table_nochim,
 
 ```{r sample-source-abundance}
 # bar plot of sample source (keyboard key or finger) and Abundance of sequences
-plot_bar(phyloseq_obj, x = "sample_source")
+plot_bar(phyloseq_obj, x = "sample_source",
+         title = "Sequence abundance for all sample sources")
 ```
+**Figure 1**: Abundance of sequences within the sapmle_sourse(s).
+We see how the abundance of sequences on the each key are not all even.
+This sparked interest on the difference of abundance between the U and
+Q keys. From here a focus on the hand or finger used for each key will
+be compared. 
+
 ```{r comparing-abundance-for-q-and-u-keys}
 # bar plot of samples from Q and U keys and Abundance of sequences
 phyloseq_obj_qu <- subset_samples(phyloseq_obj,
@@ -198,6 +232,12 @@ phyloseq_obj_qu <- subset_samples(phyloseq_obj,
 plot_bar(phyloseq_obj_qu, x = "sample_source",
          title = "Sequence abundance on Q and U keys")
 ```
+**Figure 2**: Abundance of sequences within the sapmle_sourse of the Ukey and
+Qkey. Since in the English language there are very few words and no common
+words that use the letter "Q" without "U" it was unexpected to see how the
+ideally more isolated Qkey having double the amount of sequence abundance.
+From this it will be invesitgated to see if left handed keys carry a higher
+abundance than right keys or the type of finger used is the cause. 
 
 ```{r comparing-abundance-for-s-and-l-keys}
 # bar plot of samples from L and S keys and Abundance of sequences
@@ -207,6 +247,13 @@ phyloseq_obj_sl <- subset_samples(phyloseq_obj,
 plot_bar(phyloseq_obj_sl, x = "sample_source",
          title = "Sequence abundance on L and S keys")
 ```
+**Figure 3**: Abundance of sequences within the sapmle_sourse of the Skey and
+Lkey. To separate handedness and to keep the fingers consistent, letters S
+and L were selected. It shows that the Lkey, which is on the right side of
+the keyboard, has a higher abundance. The data for the keys touched by the
+ringerfinger shows how either hand can led to a higher abundance. It is
+important to note that the Qkey had a higher abundance eventhough it is
+likely to be exposed or touched by the same finger that touches the Skey.
 
 ```{r comparing-abundance-for-g-and-h-keys}
 # bar plot of samples from G and H keys and Abundance of sequences
@@ -216,6 +263,9 @@ phyloseq_obj_gh <- subset_samples(phyloseq_obj,
 plot_bar(phyloseq_obj_gh, x = "sample_source",
          title = "Sequence abundance on G and H keys")
 ```
+**Figure 4**: Abundance of sequences within the sapmle_sourse of the Gkey and
+Hkey. As shown, the Gkey as on the left side has a higher abundance. The
+index fingers also show a higher overall abundance than the previous graphs.
 
 ```{r comparing-abundance-for-e-and-o-keys}
 # bar plot of samples from E and O keys and Abundance of sequences
@@ -225,7 +275,11 @@ phyloseq_obj_eo <- subset_samples(phyloseq_obj,
 plot_bar(phyloseq_obj_eo, x = "sample_source",
                                   title = "Sequence abundance on E and O keys")
 ```
-
+**Figure 5**: Abundance of sequences within the sapmle_sourse of the Ekey and
+Okey. The Ekey and the Okey were selected for they are the most frequently used
+key on their respective side. Both the use and the abundance of the Ekey are
+greater than the Okey. Only one of our graphs show that a key on the right side
+had a greater abundance.
 
 # Discussion
 
