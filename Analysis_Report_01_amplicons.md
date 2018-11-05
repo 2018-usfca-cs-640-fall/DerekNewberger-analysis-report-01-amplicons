@@ -1,6 +1,6 @@
 Analysis Report 1: Amplicons and the Letter Q
 ================
-Derek Newberger
+Derek Newberger and Maddie Shehan
 November 11, 2018
 
 Introduction
@@ -1209,25 +1209,27 @@ plot_bar(phyloseq_obj_eo, x = "sample_source",
 # box plot of left and right handed keys sequence abundance
 phyloseq_table <- psmelt(phyloseq_obj)
 
-phyloseq_table_AbundanceByKey <- phyloseq_table %>%
+phyloseq_abundance_by_key <- phyloseq_table %>%
 group_by(sample_source) %>%
 summarize(sumAbundance = sum(Abundance))
 
-phyloseq_table_AbundanceByKey$hand <- ifelse(phyloseq_table_AbundanceByKey$sample_source %in%
-       c("Qkey","Wkey","Ekey","Rkey","Akey","Skey","Dkey","Fkey",
-         "Gkey","Zkey","Xkey","Ckey","Vkey","Tkey","Bkey"),"L",
-       ifelse(phyloseq_table_AbundanceByKey$sample_source %in%
-              c("Ykey","Ukey","Ikey","Okey","Pkey","Hkey","Jkey",
-                "Lkey","Nkey","Mkey"), "R", 
-              ifelse(phyloseq_table_AbundanceByKey$sample_source 
-                     == "Space_bar", "B","NA")
+phyloseq_abundance_by_key$hand <-
+  ifelse(phyloseq_abundance_by_key$sample_source %in%
+       c("Qkey", "Wkey", "Ekey", "Rkey", "Akey", "Skey", "Dkey",
+         "Fkey", "Gkey", "Zkey", "Xkey", "Ckey", "Vkey", "Tkey",
+         "Bkey"), "L",
+       ifelse(phyloseq_abundance_by_key$sample_source %in%
+              c("Ykey", "Ukey", "Ikey", "Okey", "Pkey", "Hkey", "Jkey",
+                "Lkey", "Nkey", "Mkey"), "R",
+              ifelse(phyloseq_abundance_by_key$sample_source
+                     == "Space_bar", "B", "NA")
               )
        )
 
-phyloseq_table_AbundanceByKey_LR <- phyloseq_table_AbundanceByKey %>%
+phyloseq_abundance_by_key_lr <- phyloseq_abundance_by_key %>%
   filter(hand == "L" | hand == "R")
-ggplot(phyloseq_table_AbundanceByKey_LR, aes(y = sumAbundance, x = hand)) +
-geom_boxplot()+ ggtitle("Comparing abundance of sequences per hand")
+ggplot(phyloseq_abundance_by_key_lr, aes(y = sumAbundance, x = hand)) +
+geom_boxplot() + ggtitle("Comparing abundance of sequences per hand")
 ```
 
 ![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-abundance-between-left-and-right-hand-keys-1.png) **Figure 6**: Comparing abundance of sequences of the left and right hands. Instead of comparing letter by letter, this box plot shows the general trend that the left keys had a higher sequence abundance.
@@ -1235,11 +1237,11 @@ geom_boxplot()+ ggtitle("Comparing abundance of sequences per hand")
 ``` r
 # bar plot of mean abundance for left and right handed keys
 
-phyloseq_table_AbundanceByKey_LRB <- phyloseq_table_AbundanceByKey %>%
+phyloseq_abundance_by_key_lrb <- phyloseq_abundance_by_key %>%
   filter(hand == "L" | hand == "R" | hand == "B") %>%
   group_by(hand) %>%
 summarize(meanSumAbundance = mean(sumAbundance))
-ggplot(phyloseq_table_AbundanceByKey_LRB, aes(x = hand,
+ggplot(phyloseq_abundance_by_key_lrb, aes(x = hand,
                                               y = meanSumAbundance)) +
   geom_col() +
  ggtitle("Comparing mean abundance of sequences left and right handed keys")
