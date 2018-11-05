@@ -79,10 +79,6 @@ sample_names <- sapply(strsplit(filenames_forward_reads, "\\."), `[`, 1)
 filenames_forward_reads <- file.path(path, filenames_forward_reads)
 ```
 
-```{r check-quality-plots}
-# Plots the quality profiles of the first twenty samples out of 115
-# plotQualityProfile(filenames_forward_reads[1:20])
-```
 
 We can see from the quality profiles that most reads tend to get pretty bad in quality after around 200 bases. 
 
@@ -106,28 +102,13 @@ filtered_output <- filterAndTrim(fwd = filenames_forward_reads,
                                  truncQ = 2, # cut off if quality gets this low
                                  rm.phix = TRUE,
                                  compress = TRUE,
-                                 multithread = TRUE)
-```
-
-```{r filtered-read-counts-table}
-# produce nicely-formatted markdown table of read counts
-# before/after trimming
-# kable(filtered_output,
-#      col.names = c("Reads In",
-#                    "Reads Out"))
+                                 multithread = FALSE)
 ```
 
 ```{r learn-errors}
 # this build error models from each of the samples
 errors_forward_reads <- learnErrors(filtered_reads_path,
                                    multithread = FALSE)
-```
-
-```{r visualize-errors-with-plots}
-# quick check to see if error models match data
-# (black lines match black points) and are generally decresing left to right
-# plotErrors(errors_forward_reads,
-#           nominalQ = TRUE)
 ```
 
 ```{r dereplicate-sequences}
@@ -152,19 +133,6 @@ dada_forward_reads <- dada(dereplicated_forward_reads,
 # dada_forward_reads
 ```
 
-```{r make-sequence-table}
-# produce the 'site by species matrix'
-# sequence_table <- makeSequenceTable(dada_forward_reads)
-```
-
-The output table has `r nrow(sequence_table)` rows (samples) and `r ncol(sequence_table)` columns (sequence variants). Notice how we can embed R code directly in our markdown text.
-
-```{r histogram-of-sequence-lengths}
-# Quick check to look at distribution of trimmed and denoised sequences
-# hist(nchar(getSequences(sequence_table)),
-#     main = "Histogram of final sequence variant lengths",
-#     xlab = "Sequence length in bp")
-```
 
 ```{r remove-chimeras}
 # Check for and remove chimeras
@@ -180,40 +148,6 @@ non_chimeric_reads <- round(sum(sequence_table_nochim) / sum(sequence_table),
 
 After removing chimeras, we were left with `r non_chimeric_reads`% of our cleaned reads.
 
-```{r table-of-pipeline-read-counts}
-# Build a table showing how many sequences remain at each step of the pipeline
-# get_n <- function(x) sum(getUniques(x)) # make a quick function
-# track <- cbind(filtered_output, # already has 2 columns
-#               sapply(dada_forward_reads, get_n),
-#               rowSums(sequence_table),
-#               rowSums(sequence_table_nochim))
-
-# add nice meaningful column names
-# colnames(track) <- c("Input",
-#                     "Filtered",
-#                     "Denoised",
-#                     "Sequence Table",
-#                     "Non-chimeric")
-
-# set the proper rownames
-# rownames(track) <- sample_names
-
-# produce nice markdown table of progress through the pipeline
-# kable(track)
-```
-
-```{r assign-taxonomy}
-# assigns taxonomy to each sequence variant based on a supplied training set
-# made up of known sequences
-# taxa <- assignTaxonomy(sequence_table_nochim,
-#                       "data/training/rdp_train_set_16.fa.gz",
-#                       multithread = TRUE,
-#                       tryRC = TRUE) # also check with seq reverse compliments
-
-# show the results of the taxonomy assignment
-# unname(taxa)
-```
-
 ```{r extract-sequences-to-fasta}
 # we want to export the cleaned, trimmed, filtered, denoised sequence variants
 # so that we can build a phylogeny - we'll build the phylogeny outside of R
@@ -221,19 +155,8 @@ After removing chimeras, we were left with `r non_chimeric_reads`% of our cleane
 # sequence itself (which is rather confusing), because that's how DADA2 labels
 # it's columns (e.g. 'species')
 # function taken from https://github.com/benjjneb/dada2/issues/88
-# export_taxa_table_and_seqs <- function(sequence_table_nochim,
-#                                       file_seqtab,
-#                                       file_seqs) {
-#  seqtab_t <- as.data.frame(t(sequence_table_nochim)) # transpose to data frame
-#  seqs <- row.names(seqtab_t) # extract rownames
-#  row.names(seqtab_t) <- seqs # set rownames to sequences
-#  outlist <- list(data_loaded = seqtab_t)
-#  mctoolsr::export_taxa_table(outlist, file_seqtab) # write out an OTU table
-#  seqs <- as.list(seqs)
-#  seqinr::write.fasta(seqs, row.names(seqtab_t), file_seqs) # write out fasta
-# }
 
-# actually run the function, with the names of the files we want it to create
+# run the function, with the names of the files we want it to create
 # and where to put them
 export_taxa_table_and_seqs(sequence_table_nochim,
                            "output/sequence_variants_table.txt",
@@ -254,11 +177,6 @@ metadata_in <- read.table(paste0("data/metadata/",
                           stringsAsFactors = FALSE,
                           row.names = 6) # sets sample IDs to row names
 
-# read in the phylogeny, which was created from the fasta exported above
-# in Geneious by aligning the sequences with MAFFT and then building a
-# Maximum-Likelihood tree with RAxML
-# tree_in <- read_tree("output/sequence_variants_MAFFT_FastTree.newick")
-
 # Construct phyloseq object (straightforward from dada2 outputs)
 phyloseq_obj <- phyloseq(otu_table(sequence_table_nochim,
                                    taxa_are_rows = FALSE), # sample-spp matrix
@@ -267,27 +185,6 @@ phyloseq_obj <- phyloseq(otu_table(sequence_table_nochim,
                          phy_tree(tree_in)) # phylogeny from sequence variants
 ```
 
-```{r example-phyloseq-plot-1}
-# alpha diversity metrics
-# plot_richness(phyloseq_obj,
-#              x = "sample_type",
-#              measures = c("Shannon", "Simpson"),
-#              color = "Sex") +
-#  xlab("Sample origin") +
-#  geom_jitter(width = 0.2) +
-#  theme_bw()
-```
-
-**Figure 1**: Alpha diversity measures of the two sample types, colored by gender.
-
-```{r example-phyloseq-plot-2}
-# phylogeny, yay!
-# plot_tree(phyloseq_obj,
-#          color = "Sex",
-#          ladderize = TRUE) # this arranges the tree branches from short to long
-```
-
-**Figure 2**: Inferred phylogeny of sequences, with points on tips representing samples within which each particular taxa occurred. Tree represents phylogeny inferred using FastTree.
 
 ```{r sample-source-abundance}
 # bar plot of sample source (keyboard key or finger) and Abundance of sequences
@@ -295,26 +192,38 @@ plot_bar(phyloseq_obj, x = "sample_source")
 ```
 ```{r comparing-abundance-for-q-and-u-keys}
 # bar plot of samples from Q and U keys and Abundance of sequences
-phyloseq_obj_qu <- subset_samples(phyloseq_obj, sample_source=="Ukey"|sample_source=="Qkey")
-plot_bar(phyloseq_obj_qu, x = "sample_source")
+phyloseq_obj_qu <- subset_samples(phyloseq_obj,
+                                  sample_source == "Ukey" |
+                                    sample_source == "Qkey")
+plot_bar(phyloseq_obj_qu, x = "sample_source",
+         title = "Sequence abundance on Q and U keys")
 ```
 
 ```{r comparing-abundance-for-s-and-l-keys}
-# bar plot of samples from S and L keys and Abundance of sequences
-phyloseq_obj_sl <- subset_samples(phyloseq_obj, sample_source=="Skey"|sample_source=="Lkey")
-plot_bar(phyloseq_obj_sl, x = "sample_source")
+# bar plot of samples from L and S keys and Abundance of sequences
+phyloseq_obj_sl <- subset_samples(phyloseq_obj,
+                                  sample_source == "Skey" |
+                                    sample_source == "Lkey")
+plot_bar(phyloseq_obj_sl, x = "sample_source",
+         title = "Sequence abundance on L and S keys")
 ```
 
 ```{r comparing-abundance-for-g-and-h-keys}
 # bar plot of samples from G and H keys and Abundance of sequences
-phyloseq_obj_gh <- subset_samples(phyloseq_obj, sample_source=="Gkey"|sample_source=="Hkey")
-plot_bar(phyloseq_obj_gh, x = "sample_source")
+phyloseq_obj_gh <- subset_samples(phyloseq_obj,
+                                  sample_source == "Gkey" |
+                                    sample_source == "Hkey")
+plot_bar(phyloseq_obj_gh, x = "sample_source",
+         title = "Sequence abundance on G and H keys")
 ```
 
 ```{r comparing-abundance-for-e-and-o-keys}
 # bar plot of samples from E and O keys and Abundance of sequences
-phyloseq_obj_eo <- subset_samples(phyloseq_obj, sample_source=="Ekey"|sample_source=="Okey")
-plot_bar(phyloseq_obj_eo, x = "sample_source")
+phyloseq_obj_eo <- subset_samples(phyloseq_obj,
+                                  sample_source == "Ekey" |
+                                    sample_source == "Okey")
+plot_bar(phyloseq_obj_eo, x = "sample_source",
+                                  title = "Sequence abundance on E and O keys")
 ```
 
 
