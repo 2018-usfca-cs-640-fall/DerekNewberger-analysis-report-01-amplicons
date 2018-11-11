@@ -13,6 +13,54 @@ Add about 1.5-2 pages here. Must cite at least 5 peer reviewed articles.
 
 # Methods
 
+For the Fierer et al. sample collection, they swabbed each
+individual key of three personal computer keyboards (n=25-30
+keys per board) for ten seconds each. The swabs were
+cotton-tipped and previously autoclaved that were
+pre-moistened with a sterile solution. The skin of the
+ventral surface of the distal joint of each fingertip of the
+owner of the keyboard was also swabbed. These computers and
+their respective keyboards were primarily only used by thier
+repective owner.
+When the individuals were sampled, they were healthy and had
+refrained from taking antibiotics in the past 6 months and
+were 20-35 years old. The keyboars were left untouched for
+half an hour before being swabbed and within ten minutes of
+that the fingeres were swabbed. They took samples from 15
+other space bars as to compare them to the initial sampling.
+All swab samples were stored at -80 C for less than 1 week
+before DNA extraction.
+For the DNA extraction, genomic DNA was extracted from the
+swabs using the MO BIO PowerSoil DNA Isolation kit. Each
+sample was frozen, incubated, shaken (MO BIO vortex adapter),
+amplified (using previous optimized primer set), placed in a
+PCR with reverse primers of HotMasterMix (5 PRIME),
+denatured, replicated with amplicons which were then pooled
+and visualized on agarose gels using SYBR Safe DNA gel stain.
+The amplicons wee then cleaned with the UltraClean-htp
+96-well PCR Clean-up kit. Amplicon DNA concentrations were
+measured using the Quant-iTPicoGreendsDNAreagentandkit. They
+precipitated the  final pool of DNA on ice and solutions and
+centrifuged it. The supernatant pellet was washed,
+centrifuged, then air dried and then resuspended in nuclease
+free water. Pyrosequencing was carried out on a 454 Life
+Sciences Genome Sequencer FLX instrument by the Environmental
+Genomics Core Facility at the University of South Carolina.
+They had a more stringent sequence cut off with dropping
+anything less than 200 bp and had an upper limit of 300 bp
+while keeping the 25 score equal to what I did. The sequences
+were matched using their OTUs with a minimum coverage of 97%
+and a minimum identity of 97%. They used the NAST and
+Greengenes database with using a minimum alignment of 150 bp
+and a minimun identity of 75%. To measure the amount of
+dissimilarity between pairs of bacterial communities, they
+used the UniFracmetric. The shorter the distance, the greater
+the chance of similarities. They used all of these
+abbreviated procedures to analyze their data. They claim to
+have found that this process can potentially be used as a
+forensic metric since the communities matched up well with
+the corresponding individuals swabbed.
+
 ## Sample origin and sequencing
 
 Add about half a page here. In this section instead of first person (I/we), use Fierer et al., since you'll just be describing what they did, based on the methods in their paper.
@@ -82,7 +130,7 @@ filenames_forward_reads <- file.path(path, filenames_forward_reads)
 
 We can see from the quality profiles that most reads tend to get pretty bad in quality after around 200 bases. 
 
-```{r filter-reads}
+```{r filter-reads, include = FALSE}
 # Place filtered files in filtered/ subdirectory
 # note this will fail if the directory doesn't exist
 filter_path <- file.path("output", "filtered")
@@ -329,6 +377,21 @@ and the space bar. The space bar has the highest mean abundance while the trend
 of the left hand having a higher sequence abundance can still be observed. The
 difference between the mean abundance of either hand is dwarfed when taking into
 condideration the keys that are touched by both.
+
+As shown in Figure 1, there was a difference in the abundance of sequences on the
+Qkey and the Ukey. Observing an overall difference between the keys was as expected,
+however, in the English language there are not many instances where one uses the
+letter "q" without the letter "u", though it must be assumed that primarily only
+English was used by those who perfomed this experiment in Boulder, Colorado, U.S.A.
+It is important to note that this connection is apparently even more severe in
+Spanish with "Qatar" being one (if not only) words in that language that use q
+without u (cite). 
+
+Figure 7- "Both" includes three other females. 
+Figure 8- To separate them?
+Have to assume that they type normally.
+Get rid of "o" or
+Make a graph that combines the others. 
 # Discussion
 
 Add around 2-3 pages interpreting your results and considering future directions one might take in analyzing these data.
