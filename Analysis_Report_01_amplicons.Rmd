@@ -1,6 +1,6 @@
 ---
 title: "Analysis Report 1: Amplicons and the Letter Q"
-author: "Derek Newberger and Maddie Shehan"
+author: "Derek Newberger and help from Maddie Shehan"
 date: "November 11, 2018"
 output: github_document
 bibliography: references.bib
@@ -9,9 +9,35 @@ csl: bioinformatics.csl
 
 # Introduction
 
-Add about 1.5-2 pages here. Must cite at least 5 peer reviewed articles.
+Add about 1.5-2 pages here. Must cite at least 10 peer reviewed articles.
+
+Expanding technologies beckons the attempt to answer large
+questions with big data. Originally the data acquired for
+this question involved developing the forensic technique of
+using unique microbiomes left by fingers on a keyborad to
+link them to the owner of the keyboard. However, with such a
+large dataset, there are other questions raised that require
+some analyisis as to what could have caused the oserved
+results. My hypothesis is that the most frequently used keys on a keyborad would have the greatest sequence abundance. However, as observed by viewing a bar graph presented in class, this does not hold consistenly ture. Therefore, the major inconsistency to be assesed is how the Qkey has essentially double the sequence abundance than the Ukey, when the Qkey is used far less and in the very least. Hopefully this will shed some light as to how a key with a loer frequency of use has a much greater sequence abundance. A series of assumptions have to be made and the variables that perhaps influence either frequency of contact will be assesesed in the following. 
+
+Which hand uses the key
+  Proportion of right handed individuals
+  Do dominate hands are dirtier?
+  In hand washing what often gets neglected?
+Type of finger used per key
+  Is a particular finger dirty?
+  Is there a finger that is less used?
+Type of key
+  Frequency of use of keys (in the English language)
+  Which row is the key on?
+  Could multiple fingers touch it?
+This question is important because...
+  Could be applied to hand washing... knowing least contaminated finger, which finger to swab for another one of these studies. There is a difference. Sequencing is expensive, so can focus on one finger. handshake with right hand. 
+
 
 # Methods
+
+## Sample origin and sequencing
 
 For the Fierer et al. sample collection, they swabbed each
 individual key of three personal computer keyboards (n=25-30
@@ -20,13 +46,13 @@ cotton-tipped and previously autoclaved that were
 pre-moistened with a sterile solution. The skin of the
 ventral surface of the distal joint of each fingertip of the
 owner of the keyboard was also swabbed. These computers and
-their respective keyboards were primarily only used by thier
-repective owner.
+their respective keyboards were primarily only used by the
+respective owner.
 When the individuals were sampled, they were healthy and had
 refrained from taking antibiotics in the past 6 months and
-were 20-35 years old. The keyboars were left untouched for
+were 20-35 years old. The keyboards were left untouched for
 half an hour before being swabbed and within ten minutes of
-that the fingeres were swabbed. They took samples from 15
+that the fingers were swabbed. They took samples from 15
 other space bars as to compare them to the initial sampling.
 All swab samples were stored at -80 C for less than 1 week
 before DNA extraction.
@@ -40,39 +66,31 @@ and visualized on agarose gels using SYBR Safe DNA gel stain.
 The amplicons wee then cleaned with the UltraClean-htp
 96-well PCR Clean-up kit. Amplicon DNA concentrations were
 measured using the Quant-iTPicoGreendsDNAreagentandkit. They
-precipitated the  final pool of DNA on ice and solutions and
+precipitated the final pool of DNA on ice and solutions and
 centrifuged it. The supernatant pellet was washed,
 centrifuged, then air dried and then resuspended in nuclease
 free water. Pyrosequencing was carried out on a 454 Life
 Sciences Genome Sequencer FLX instrument by the Environmental
 Genomics Core Facility at the University of South Carolina.
-They had a more stringent sequence cut off with dropping
-anything less than 200 bp and had an upper limit of 300 bp
-while keeping the 25 score equal to what I did. The sequences
-were matched using their OTUs with a minimum coverage of 97%
-and a minimum identity of 97%. They used the NAST and
-Greengenes database with using a minimum alignment of 150 bp
-and a minimun identity of 75%. To measure the amount of
-dissimilarity between pairs of bacterial communities, they
-used the UniFracmetric. The shorter the distance, the greater
-the chance of similarities. They used all of these
-abbreviated procedures to analyze their data. They claim to
-have found that this process can potentially be used as a
-forensic metric since the communities matched up well with
-the corresponding individuals swabbed.
+They believe to have found that this process can potentially
+be used as a forensic metric since the communities matched up
+well with the corresponding individuals swabbed.
 
-## Sample origin and sequencing
-
-Add about half a page here. In this section instead of first person (I/we), use Fierer et al., since you'll just be describing what they did, based on the methods in their paper.
 
 ## Computational
 
-These are the methods you used. Should probably be at least a half of a page. At a very minimum should include citations for DADA2 [@callahan2016] and phyloseq [@mcmurdie2013]. Note that these don't count towards the five references you need to cite in the introduction. We will use the Ribosomal Database Project reference taxonomy to assign taxonomy to unkown sequences [@cole2008ribosomal]. 
+These are the methods you used. Should probably be at least a half of a page. At a very minimum should include citations for DADA2 [@callahan2016] and phyloseq [@mcmurdie2013]. Note that these don't count towards the five references you need to cite in the introduction. We will use the Ribosomal Database Project reference taxonomy to assign taxonomy to unkown sequences [@cole2008ribosomal].
+
+### Starting the project and pre-existing code
+
+In order to retireve this dataset I forked and cloned the repository to my github DerekNewberger-analysis-report-01-amplicons from the class repository. Using RStudio I modified the Analysis_Report_01_amplicons.Rmd file where there were pre-existing chunks of code. The code installed the necessary libraries (dplyr, tidyr, knitr, ggplot2, citr, dada2, seqinr, mctoolsr, and phyloseq). The sequences longer than 300 base pairs were filtered and trimmed since the quality apparead to suffere after 200 base pairs. We used build error models from each of the samples to learn of the possible error rates. Using derepfastq we removed any sequences that were duplicates which removed around half of the sequences we had remaining in the dataset. Using dada and recommendations found on github or 454 data we adjusted the parameters and gave the HOMOPOLYMER_GAP_PENALTY a -1 since 454 sequencing has a difficulty dealing with this aspect of sequencing. A ‘site by species matrix’ was made, and it formed a table that instead of species, used the actual sequence as the “species” name. We then searched for and then removed chimeras using removeBimeraDenovo. Since the sampling method used was swabbing different surfaces and not an isolation DNA extraction technique, there is a chance that multiple sequences from different organisms were fused together. We built a phylogeny using the cleaned data and assigned them a taxonomy to each sequence variant based on a supplied training set of known sequences. There is code that can build a phylogenetic tree using a phyloseq object from dada2 outputs. 
+
+### Constructing the code for the figures
+
 
 # Results
 
-In addition to a minimum of 3-4 figures/tables (and associated captions), you should include sufficient text in this section to describe what your findings were. Remember that in the results section you just describe what you found, but you don't interpret it - that happens in the discussion.
-
+include sufficient text in this section to describe what your findings were. Remember that in the results section you just describe what you found
 ```{r load-libraries, message = FALSE}
 # Be sure to install these packages before running this script
 # They can be installed either with the intall.packages() function
@@ -230,7 +248,7 @@ export_taxa_table_and_seqs(sequence_table_nochim,
 # made up of known sequences
  taxa <- assignTaxonomy(sequence_table_nochim,
                        "data/training/rdp_train_set_16.fa.gz",
-                       multithread = TRUE,
+                       multithread = FALSE,
                        tryRC = TRUE) # also check with seq reverse compliments
 ```
 
@@ -393,6 +411,8 @@ Have to assume that they type normally.
 Get rid of "o" or
 Make a graph that combines the others. 
 # Discussion
+
+There are multpile instances where the opposite can be obervved, but the instance that was the most notable was how the Qkey
 
 Add around 2-3 pages interpreting your results and considering future directions one might take in analyzing these data.
 
