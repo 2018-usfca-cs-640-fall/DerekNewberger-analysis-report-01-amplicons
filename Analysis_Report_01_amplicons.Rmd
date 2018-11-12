@@ -24,18 +24,9 @@ The language and the QWERTY keyboard influences how often and in what way a key 
 
 The general nature of the microbiome of the hand influences what the sequence abundance on the keys. Although not clearly stated in this dataset like the previous dataset, the handedness of the subjects was omitted. However, if Fierer et al. had selected the same individuals, then they would all be right handed. In the end, statistically speaking the majority of the human population is right handed (86.2%) [@spiegler1983]. In a study focusing on the palm region, it has been found that handedness has a significant influence on bacterial communities [@fierer2008]. Although both hands have a similar overall diversity, the composition of the bacterial communities are significantly different. It is speculated that this is due to either differences in skin environmental conditions (sebum production, salinity, and hydration) or simply due to the hands coming into contact with different types of environmental surfaces at a different frequency. Taking the similarities into account, each hand still carries a distinct bacterial signature through different bacterial communities. It is believed that two hands of the same person could be linked through common bacterial communities even though on average these communities shared only 17% of their phylotypes demonstrating how each individual carries a massive amount of heterogeneity in skin bacterial communities. Although bacterial communities are not uniform across the entire body, the skin surfaces that are closer in proximity may carry similar bacterial communities. On average, the dominant hand carried a higher percentage of sequences than the non-dominant hand, but not by a wide margin [@fierer2008]. From this palm study, it can be inferred that the bacterial communities between fingers should be more similar than not in at least bacterial diversity. This would indicate that the difference in handedness when only looking at the sequence abundance and not evenness may be less important and cannot be used as an explanation for the increased abundance for either hand. Never the less, it will be assessed more closely as to what differences can be seen on handedness. Also, from this study, we have little reason to believe that two adjacent fingers would have drastically different bacterial communities and therefore should have similar results of sequence abundance. This will also be studied further to see if the data hints at something else. It is also important to note that other studies which observed high intra-personal variability between left and right hands on a several month time scale considereed the phylotypes that were present on each hand to not be significantly correlated at the species level [@caporaso2011]. This would indicate that any keys touched by both hands on the scale of months (assuming that the individuals owned their keyboards for that long) could show a much higher sequence abundance. It is also interesting to note that the technique used for this study, swabbing, was found to be effective but that samples from a single individual were no more similar to each other than those betwen individuals [@rosenthal2014]. This further supports the previous study that keys should have different sequences swabbed off of them depending on the hand. Swabbing is still considered the best sampling method when it come to assesing transient bacterial populations [@zapka2017]. Another study brings up the concept that the presence of other microorganisms in the skin microbiota may affect the growth or migration of new colonizers [@rosenthal2013]. To take it one step further, microrganisms already on the keyboard keys may present a threat to the new microrganisms being introduced by each new typing session of the owner. This may cause different levels of sequences per key and its frequency of use is less important because it involves mutliple organisms competing with one another and if the most fit organism has its way, then the key will have minimal sequence abundance. 
 
- 
-  In hand washing what often gets neglected?
-
-
-  
 This question is important because...
   Could be applied to hand washing... knowing least contaminated finger, which finger to swab for another one of these studies. There is a difference. Sequencing is expensive, so can focus on one finger. handshake with right hand. 
 
-Asumptions:
-Only letter keys
-In English or Spanish
-typing in a structured fashion.
 
 Currently there has been no differences in the types of bacteria found between swabbing and scrapping. Also, it is not known if the sequences came from resident or transient bacteria since it was not mentioned if the keyboards were cleaned, then touched by a pre-washed hand, and then sawabbed [@edmonds2015]. 
 
@@ -309,6 +300,19 @@ words that use the letter "Q" without "U" it was unexpected to see how the
 ideally more isolated Qkey having double the amount of sequence abundance.
 From this it will be invesitgated to see if left handed keys carry a higher
 abundance than right keys or the type of finger used is the cause. 
+```{r comparing-abundance-for-a-q-z-keys}
+# bar plot of samples from A, Q, and Z keys and Abundance of sequences
+phyloseq_obj_sl <- subset_samples(phyloseq_obj,
+                                  sample_source == "Qkey" |
+                                    sample_source == "Akey" |
+                                    sample_source == "Zkey")
+plot_bar(phyloseq_obj_sl, x = "sample_source",
+         title = "Sequence abundance on A, Q, and Z keys")
+```
+**Figure 3**: Abundance of sequences within the sapmle_sourse of the Akey, Qkey, and Zkey.
+All three letter keys that the left pinky finger interacts with were plotted together. 
+This was to see if frequency could be used to be used as a predictor for sequence abundance.
+Here, the relative frequency paris up with the correct relative sequence abundance. 
 
 ```{r comparing-abundance-for-s-and-l-keys}
 # bar plot of samples from L and S keys and Abundance of sequences
@@ -318,7 +322,7 @@ phyloseq_obj_sl <- subset_samples(phyloseq_obj,
 plot_bar(phyloseq_obj_sl, x = "sample_source",
          title = "Sequence abundance on L and S keys")
 ```
-**Figure 3**: Abundance of sequences within the sapmle_sourse of the Skey and
+**Figure 4**: Abundance of sequences within the sapmle_sourse of the Skey and
 Lkey. To separate handedness and to keep the fingers consistent, letters S
 and L were selected. It shows that the Lkey, which is on the right side of
 the keyboard, has a higher abundance. The data for the keys touched by the
@@ -334,7 +338,7 @@ phyloseq_obj_gh <- subset_samples(phyloseq_obj,
 plot_bar(phyloseq_obj_gh, x = "sample_source",
          title = "Sequence abundance on G and H keys")
 ```
-**Figure 4**: Abundance of sequences within the sapmle_sourse of the Gkey and
+**Figure 5**: Abundance of sequences within the sapmle_sourse of the Gkey and
 Hkey. As shown, the Gkey as on the left side has a higher abundance. The
 index fingers also show a higher overall abundance than the previous graphs.
 
@@ -346,7 +350,7 @@ phyloseq_obj_eo <- subset_samples(phyloseq_obj,
 plot_bar(phyloseq_obj_eo, x = "sample_source",
                                   title = "Sequence abundance on E and O keys")
 ```
-**Figure 5**: Abundance of sequences within the sapmle_sourse of the Ekey and
+**Figure 6**: Abundance of sequences within the sapmle_sourse of the Ekey and
 Okey. The Ekey and the Okey were selected for they are the most frequently used
 key on their respective side. Both the use and the abundance of the Ekey are
 greater than the Okey. Only one of our graphs show that a key on the right side
@@ -379,7 +383,7 @@ ggplot(phyloseq_abundance_by_key_lr, aes(y = sumAbundance, x = hand)) +
 geom_boxplot() + ggtitle("Comparing abundance of sequences per hand")
 
 ```
-**Figure 6**: Comparing abundance of sequences of the left and right hands.
+**Figure 7**: Comparing abundance of sequences of the left and right hands.
 Instead of comparing letter by letter, this box plot shows the general trend
 that the left keys had a higher sequence abundance.
 
@@ -395,28 +399,15 @@ ggplot(phyloseq_abundance_by_key_lrb, aes(x = hand,
   geom_col() +
  ggtitle("Comparing mean abundance of sequences left and right handed keys")
 ```
-**Figure 7**: Comparing abundance of sequences for left and right handed keys
+**Figure 8**: Comparing abundance of sequences for left and right handed keys
 and the space bar. The space bar has the highest mean abundance while the trend
 of the left hand having a higher sequence abundance can still be observed. The
 difference between the mean abundance of either hand is dwarfed when taking into
 condideration the keys that are touched by both.
 
-As shown in Figure 1, there was a difference in the abundance of sequences on the
-Qkey and the Ukey. Observing an overall difference between the keys was as expected,
-however, in the English language there are not many instances where one uses the
-letter "q" without the letter "u", though it must be assumed that primarily only
-English was used by those who perfomed this experiment in Boulder, Colorado, U.S.A.
-It is important to note that this connection is apparently even more severe in
-Spanish with "Qatar" being one (if not only) words in that language that use q
-without u (cite). 
-
-Figure 7- "Both" includes three other females. 
-Figure 8- To separate them?
-Have to assume that they type normally.
-Get rid of "o" or
-Make a graph that combines the others. 
-graph the g+h, S+l together
-graph Q,W, and Z together
+In class, Dr. Zimmerman made a bar plot showing the sequence abundance on each sample source.
+Observing an overall difference between the keys was as expected. However, as shown in Figure 1, there was a difference in the abundance of sequences on the Qkey and the Ukey. A bar plot was then made to eliminate distractions and focus on the Qkey and the Ukey. In Figure 2, the Qkey almost reaches the 2500 mark on the abundance axis meanwhile the Ukey is at 1000. The Qkey has more than double the amount of sequence abundance than the Ukey when the Ukey has more than double the frequency as stated before [@solso1976]. To focus on the keys touched primarily by the pinky finger, Figure 3 shows the sequence abundance for the Akey, Qkey, and the Zkey. The relative frequencies and sequence abundancies match. To compare the sequence abundance of the left pinky finger and to inquire about handedness, Figure 4 was created. Here we see that the Skey, which is touched by the ringfinger on the left hand, has a lower sequence abundance than the Lkey that is touched by the ringfinger on the right hand. Niether key had a greater sequence abundance than the Qkey even though they are on the home and have a higher frequency [@solso1976]. In Figure 5 I compared the Gkey and the Hkey to see if there was a difference in sequence abundance for the index finger based off of handedness. Both keys had a higher sequence abundance than any key previously focused on with the Gkey, which is on the left side, having a higher sequence abundance by almost a 1000. The most frequently used letter key on the left side was compared to the key on the right side since handedness appears to have a trend. In Figure 6 the Ekey shows a 50% higher sequence abundance than the Okey. Both are vowels that are frequently used and are on the back row. The Ekey is used by the left middle finger and the Okey is used by the same finger as the Lkey, the ringfinger on the right hand. To further inspect how handedness could also be used as a predictor for sequence abundance, a box plot was made which encompasses all the letter keys on the left to those on the right. Maintaining the consistency oberved in the other figures, Figure 7 shows how the left handed letter keys have a higher sequence abundance than the right. Lastly, Figure 8 shows the mean abundance of sequences between left and right habded letter keys along with the space bar. The space bar, which is used by both hands, showed a much higher sequence abundance than expected. However, I was advised to consult the metadata and found that three females were included in the space bar sample. 
+ 
 # Discussion
 
 There are multpile instances where the opposite can be obervved, but the instance that was the most notable was how the Qkey
