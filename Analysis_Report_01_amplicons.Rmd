@@ -18,7 +18,10 @@ using unique microbiomes left by fingers on a keyborad to
 link them to the owner of the keyboard. However, with such a
 large dataset, there are other questions raised that require
 some analyisis as to what could have caused the oserved
-results. My hypothesis is that the most frequently used keys on a keyborad would have the greatest sequence abundance. However, as observed by viewing a bar graph presented in class, this does not hold consistenly ture. Therefore, the major inconsistency to be assesed is how the Qkey has essentially double the sequence abundance than the Ukey, when the Qkey is used far less and in the very least. Hopefully this will shed some light as to how a key with a loer frequency of use has a much greater sequence abundance. A series of assumptions have to be made and the variables that perhaps influence either frequency of contact will be assesesed in the following. 
+results. My hypothesis is that the most frequently used keys on a keyborad would have the greatest sequence abundance. However, as observed by viewing a bar graph presented in class, this does not hold consistenly ture. Therefore, the major inconsistency to be assesed is how the Qkey has essentially double the sequence abundance than the Ukey, when the Qkey is used far less and in the very least. Hopefully this will shed some light as to how a key with a lower frequency of use has a much greater sequence abundance. A series of assumptions have to be made and *the______and* biological variables that perhaps cause more sequences to be on a particular key will be assesesed in the following.
+
+The language and the QWERTY keyboard influences how often and in what way a key is touched. In regards to language, we have to assume that individuals in Boulder Colorado who volunteered themselves and their keyboards typed in either English or Spanish. There are some words in the English language that use the letter Q without the letter U, however, those caeses are rarely used. The frequency, or the percentage of occurnce for the letter Q is 0.10% and for the letter U is it 2.72% [@solso1976]. In Spanish, only names of a frieign origin can use the letter Q without the letter U [@cite]. The Ekey is the most frequently used [@betts2008] and holds the highest frequency of occurance with 12.62% [@solso1976].Almost every key is exclusively used by either the left hand or right hand and the line drawn between them is clearly distinct [@choi1996]. The QWERTY keyboard has become the standard oder in how the letters are presented to us on a typing interphase [@noyes1983]. It currently overloads the left hand since 57% of all typing is on the left side. The little fingers are responsible for more keys than most other fingers. The three rows are not used evenly, in that the home row is responsible for 32% of typing, the back row is resposible for 52%, and lastly the front row is responsible for only 16% [@noyes1983]. 
+
 
 Which hand uses the key
   Proportion of right handed individuals
@@ -27,13 +30,17 @@ Which hand uses the key
 Type of finger used per key
   Is a particular finger dirty?
   Is there a finger that is less used?
-Type of key
-  Frequency of use of keys (in the English language)
-  Which row is the key on?
-  Could multiple fingers touch it?
+
+  
 This question is important because...
   Could be applied to hand washing... knowing least contaminated finger, which finger to swab for another one of these studies. There is a difference. Sequencing is expensive, so can focus on one finger. handshake with right hand. 
 
+Asumptions:
+Only letter keys
+In English or Spanish
+typing in a structured fashion.
+
+Currently there has been no differences in the types of bacteria found between swabbing and scrapping. Also, it is not known if the sequences came from resident or transient bacteria since it was not mentioned if the keyboards were cleaned, then touched by a pre-washed hand, and then sawabbed [@edmonds2015]. 
 
 # Methods
 
@@ -87,6 +94,7 @@ In order to retireve this dataset I forked and cloned the repository to my githu
 
 ### Constructing the code for the figures
 
+Using the phyloseq_obj made in the pre-existing code, Dr. Zimmerman made a bar plot in class of the sequence abundance for all sample sources. Using phyloseq, phyloseq_obj_qu was made to then make the bar plot that just focuses on the Qkey and Ukey. Bar plots were then made to compare the L to S, G to H, and E to O keys.
 
 # Results
 
@@ -410,6 +418,8 @@ Figure 8- To separate them?
 Have to assume that they type normally.
 Get rid of "o" or
 Make a graph that combines the others. 
+graph the g+h, S+l together
+graph Q,W, and Z together
 # Discussion
 
 There are multpile instances where the opposite can be obervved, but the instance that was the most notable was how the Qkey
