@@ -9,8 +9,6 @@ csl: bioinformatics.csl
 
 # Introduction
 
-Add about 1.5-2 pages here. Must cite at least 10 peer reviewed articles.
-
 Expanding technologies beckons the attempt to answer large
 questions with big data. Originally the data acquired for
 this question involved developing the forensic technique of
@@ -82,11 +80,15 @@ In order to retireve this dataset I forked and cloned the repository to my githu
 
 ### Constructing the code for the figures
 
-Using the phyloseq_obj made in the pre-existing code, Dr. Zimmerman made a bar plot in class of the sequence abundance for all sample sources. Using phyloseq, phyloseq_obj_qu was made to then make the bar plot that just focuses on the Qkey and Ukey. Bar plots were then made to compare the L to S, G to H, and E to O keys.
+In the pre-existing code Dr. Zimmerman made the phyloseq_obj, a phyloseq class object containing information on the sequence abundance of computer keyboard keys. He then used phyloseq_obj to make a bar plot of the sequence abundance for all sample sources. 
+
+We created a phyloseq class object, named phyloseq_obj_qu, which contained a subset of the data from phyloseq_obj for which only the Qkey and the Ukey were the sample source (sample_source).  We then used the phyloseq_obj_qu to create a bar plot comparing the sequence abundances of the Qkey and the Ukey.  We then used that same method to compare Lkey and Skey, Gkey and Hkey, Ekey and Okey. For on figure we compared the Q, A, and Z keys. 
+
+We used psmelt to combine the tables in phyloseq_obj into a singular table called phyloseq_table. Using phyloseq_table, we grouped by sample source to make a new column called sumAbundance in phyloseq_abundance_by_key. Then, to separate all the left-handed keys, the right handed keys, and the keys that are neither, we used ifelse. Using the “True” and “False” method we made a vector which lists off the keys and places then in either L, R, B, or NA. Using phyloseq and ggplot we then made a box plot that filtered for only left and right-handed letter keys to see how their sequence abundances compared once added together. Once again using phyloseq_abundance_by_key we used phyloseq and ggplot to make bar plot of the mean sum abundance filtering for left handed, right handed, and both handed keys.
+
 
 # Results
 
-include sufficient text in this section to describe what your findings were. Remember that in the results section you just describe what you found
 ```{r load-libraries, message = FALSE}
 # Be sure to install these packages before running this script
 # They can be installed either with the intall.packages() function
