@@ -1,12 +1,18 @@
 Analysis Report 1: Amplicons and the Letter Q
 ================
-Derek Newberger and Maddie Shehan
+Derek Newberger and help from Maddie Shehan
 November 11, 2018
 
 Introduction
 ============
 
-Add about 1.5-2 pages here. Must cite at least 5 peer reviewed articles.
+Expanding technologies beckons the attempt to answer large questions with big data. Originally the data acquired for this question involved developing the forensic technique of using unique microbiomes left by fingers on a keyboard to link them to the owner of the keyboard. However, with such a large data set, there are other questions raise. My hypothesis is that the most frequently used keys on a keyboard would have the greatest sequence abundance. However, as observed by viewing a bar graph presented in class, this does not hold consistently true. Therefore, the major inconsistency to be studied is the Qkey, which has essentially double the sequence abundance than the Ukey.Hopefully this will shed some light as to how a key with a lower frequency of use has a much greater sequence abundance. In order to address some assumptions made, we have to consider the influence that language, the QWERTY keyboard, and human hand microbiomes have on sequence abundance. These themes will perhaps shed light as to how the relationship between frequency of key use and the sequence abundance found on a key.
+
+The language and the QWERTY keyboard influences how often and in what way a key is touched. In regard to language, we have to assume that individuals in Boulder Colorado who volunteered themselves and their keyboards typed in either English or Spanish. There are some words in the English language that use the letter Q without the letter U, however, those cases are rarely used. The frequency, or the percentage of occurrence for the letter Q is 0.10% and for the letter U is it 2.72% (Solso and King, 1976). The percent occurrence can be used as the frequency of use of the keys on keyboard. Therefore, it should be surprising that the sequence abundance for the Qkey is higher than the Ukey since it is used much less. Even in Spanish, the second most spoken and written language in the United States (Potowski and Carreira, 2010), only names of a foreign origin can use the letter Q without the letter U. The Ekey is the most frequently used (Betts-LaCroix, 2008) and holds the highest frequency of occurrence with 12.62% (Solso and King, 1976). Next, we have to assume that the individuals who were selected, typically typed in the traditional sense by using two hands on the middle or "home" line. Almost every key is exclusively used by either the left hand or right hand and the line drawn between them is clearly indicated (Choi, 1996). The QWERTY keyboard has become the standard order in how the letters are presented to us on a typing interphase (Noyes, 1983). It currently overloads the left hand since 57% of all typing is on the left side. The little fingers are responsible for more keys than most other fingers. The three rows are not used evenly, in that the home row is responsible for 32% of typing, the back row is responsible for 52%, and lastly the front row is responsible for only 16% (Noyes, 1983). This will guide us as to what we choose to focus on and what we find interesting. We would have reason to suspect that the left side of the keyboard would have more exposure than the right side of the keyboard and therefore, probably have a slightly higher relative abundance. If continuing to make the connection between higher frequency of use, the higher sequence abundance, than the back row will have the highest, followed by the home row, and lastly it would be as predicted to see any comparisons using the front row to have a comparatively low sequence abundance.
+
+The general nature of the microbiome of the hand influences what the sequence abundance on the keys. Although not clearly stated in this data set like the previous data set, the handedness of the subjects was omitted. However, if Fierer et al. had selected the same individuals, then they would all be right handed. In the end, statistically speaking the majority of the human population is right handed (86.2%) (Spiegler and Yeni-Komshian, 1983). In a study focusing on the palm region, it has been found that handedness has a significant influence on bacterial communities (Fierer *et al.*, 2008). Although both hands have a similar overall diversity, the composition of the bacterial communities are significantly different. It is speculated that this is due to either differences in skin environmental conditions (sebum production, salinity, and hydration) or simply due to the hands coming into contact with different types of environmental surfaces at a different frequency. Taking the similarities into account, each hand still carries a distinct bacterial signature through different bacterial communities. It is believed that two hands of the same person could be linked through common bacterial communities even though on average these communities shared only 17% of their phylotypes demonstrating how each individual carries a massive amount of heterogeneity in skin bacterial communities. Although bacterial communities are not uniform across the entire body, the skin surfaces that are closer in proximity may carry similar bacterial communities. On average, the dominant hand carried a higher percentage of sequences than the non-dominant hand, but not by a wide margin (Fierer *et al.*, 2008). From this palm study, it can be inferred that the bacterial communities between fingers should be more similar than not in at least bacterial diversity. This would indicate that the difference in handedness when only looking at the sequence abundance and not evenness may be less important and cannot be used as an explanation for the increased abundance for either hand. Never the less, it will be assessed more closely as to what differences can be seen on handedness. Also, from this study, we have little reason to believe that two adjacent fingers would have drastically different bacterial communities and therefore should have similar results of sequence abundance. This will also be studied further to see if the data hints at something else. It is also important to note that other studies which observed high intra-personal variability between left and right hands on a several month time scale considered the phylotypes that were present on each hand to not be significantly correlated at the species level (Caporaso *et al.*, 2011). This would indicate that any keys touched by both hands on the scale of months (assuming that the individuals owned their keyboards for that long) could show a much higher sequence abundance. It is also interesting to note that the technique used for this study, swabbing, was found to be effective but that samples from a single individual were no more similar to each other than those between individuals (Rosenthal *et al.*, 2014). This further supports the previous study that keys should have different sequences swabbed off of them depending on the hand. Swabbing is still considered the best sampling method when it come to assessing transient bacterial populations (Zapka *et al.*, 2017). Currently there has been no differences in the types of bacteria found between swabbing and scrapping (Edmonds-Wilson *et al.*, 2015). Another study brings up the concept that the presence of other microorganisms in the skin microbiota may affect the growth or migration of new colonizers (Rosenthal *et al.*, 2013). To take it one step further, microorganisms already on the keyboard keys may present a threat to the new microorganisms being introduced by each new typing session of the owner. This may cause different levels of sequences per key and its frequency of use is less important because it involves multiple organisms competing with one another and if the most fit organism has its way, then the key will have minimal sequence abundance. Also, it is not known if the sequences are resident or transient bacteria since it was not mentioned if the keyboards were cleaned, then touched by a pre-washed hand, and then swabbed. Conceptually, transient bacteria would be better suited to fend off residential bacteria originating for the hand since they are accustomed to different environments.
+
+In answering this question we could better understand the bacterial variation per hand and finger.I failed to find any study that focuses on an individual finger's microbiome. Such findings could be applied to hand washing, since it could help to pin down which finger tends to be more contaminated or just neglected what it comes to hygiene. This could lead into a better understanding of which hand or finger is more likely to transmit bacteria onto another surface or person. Sequencing is expensive, and if the goal is to find as many human microbes as possible in one single area that is prone to human interaction, a focus on a single finger would be ideal. In all, understanding the human microbiome can lead to health revolutions, and if there is an interest in hands, an area that heavily interacts with its environment, then the fingers on an individual level should be investigated.
 
 Methods
 =======
@@ -14,17 +20,25 @@ Methods
 Sample origin and sequencing
 ----------------------------
 
-Add about half a page here. In this section instead of first person (I/we), use Fierer et al., since you'll just be describing what they did, based on the methods in their paper.
+For the Fierer et al. sample collection, they swabbed each individual key of three personal computer keyboards (n=25-30 keys per board) for ten seconds each. The swabs were cotton-tipped and previously autoclaved that were pre-moistened with a sterile solution. The skin of the ventral surface of the distal joint of each fingertip of the owner of the keyboard was also swabbed. These computers and their respective keyboards were primarily only used by the respective owner. When the individuals were sampled, they were healthy and had refrained from taking antibiotics in the past 6 months and were 20-35 years old. The keyboards were left untouched for half an hour before being swabbed and within ten minutes of that the fingers were swabbed. They took samples from 15 other space bars as to compare them to the initial sampling. All swab samples were stored at -80 C for less than 1 week before DNA extraction. For the DNA extraction, genomic DNA was extracted from the swabs using the MO BIO PowerSoil DNA Isolation kit. Each sample was frozen, incubated, shaken (MO BIO vortex adapter), amplified (using previous optimized primer set), placed in a PCR with reverse primers of HotMasterMix (5 PRIME), denatured, replicated with amplicons which were then pooled and visualized on agarose gels using SYBR Safe DNA gel stain. The amplicons wee then cleaned with the UltraClean-htp 96-well PCR Clean-up kit. Amplicon DNA concentrations were measured using the Quant-iTPicoGreendsDNAreagentandkit. They precipitated the final pool of DNA on ice and solutions and centrifuged it. The supernatant pellet was washed, centrifuged, then air dried and then re-suspended in nuclease free water. Pyrosequencing was carried out on a 454 Life Sciences Genome Sequencer FLX instrument by the Environmental Genomics Core Facility at the University of South Carolina. They believe to have found that this process can potentially be used as a forensic metric since the communities matched up well with the corresponding individuals swabbed.
 
 Computational
 -------------
 
-These are the methods you used. Should probably be at least a half of a page. At a very minimum should include citations for DADA2 (Callahan *et al.*, 2016) and phyloseq (McMurdie and Holmes, 2013). Note that these don't count towards the five references you need to cite in the introduction. We will use the Ribosomal Database Project reference taxonomy to assign taxonomy to unkown sequences (Cole *et al.*, 2008).
+### Starting the project and pre-existing code
+
+In order to retrieve this data set I forked and cloned the repository to my github DerekNewberger-analysis-report-01-amplicons from the class repository. Using RStudio I modified the Analysis\_Report\_01\_amplicons.Rmd file where there were pre-existing chunks of code. The code installed the necessary libraries (dplyr, tidyr, knitr, ggplot2, citr, dada2, seqinr, mctoolsr, and phyloseq). The sequences longer than 300 base pairs were filtered and trimmed since the quality Appeared to suffer after 200 base pairs. We used build error models from each of the samples to learn of the possible error rates. Using derepfastq we removed any sequences that were duplicates which removed around half of the sequences we had remaining in the data set. Using dada and recommendations found on github or 454 data we adjusted the parameters and gave the HOMOPOLYMER\_GAP\_PENALTY a -1 since 454 sequencing has a difficulty dealing with this aspect of sequencing (Callahan *et al.*, 2016). A ‘site by species matrix’ was made, and it formed a table that instead of species, used the actual sequence as the “species” name. We then searched for and then removed chimeras using removeBimeraDenovo. Since the sampling method used was swabbing different surfaces and not an isolation DNA extraction technique, there is a chance that multiple sequences from different organisms were fused together. We built a phylogeny using the cleaned data and assigned them a taxonomy to each sequence variant based on a supplied training set of known sequences. We used the Ribosomal Database Project reference taxonomy to assign taxonomy to unknown sequences. There is code that can build a phylogenetic tree using a phyloseq object from dada2 outputs (Cole *et al.*, 2008; McMurdie and Holmes, 2013).
+
+### Constructing the code for the figures
+
+In the pre-existing code Dr. Zimmerman made the phyloseq\_obj, a phyloseq class object containing information on the sequence abundance of computer keyboard keys. He then used phyloseq\_obj to make a bar plot of the sequence abundance for all sample sources.
+
+We created a phyloseq class object, named phyloseq\_obj\_qu, which contained a subset of the data from phyloseq\_obj for which only the Qkey and the Ukey were the sample source (sample\_source). We then used the phyloseq\_obj\_qu to create a bar plot comparing the sequence abundances of the Qkey and the Ukey. We then used that same method to compare Lkey and Skey, Gkey and Hkey, Ekey and Okey. For on figure we compared the Q, A, and Z keys.
+
+We used psmelt to combine the tables in phyloseq\_obj into a singular table called phyloseq\_table. Using phyloseq\_table, we grouped by sample source to make a new column called sumAbundance in phyloseq\_abundance\_by\_key. Then, to separate all the left-handed keys, the right handed keys, and the keys that are neither, we used ifelse. Using the “True” and “False” method we made a vector which lists off the keys and places then in either L, R, B, or NA. Using phyloseq and ggplot we then made a box plot that filtered for only left and right-handed letter keys to see how their sequence abundances compared once added together. Once again using phyloseq\_abundance\_by\_key we used phyloseq and ggplot to make bar plot of the mean sum abundance filtering for left handed, right handed, and both handed keys.
 
 Results
 =======
-
-In addition to a minimum of 3-4 figures/tables (and associated captions), you should include sufficient text in this section to describe what your findings were. Remember that in the results section you just describe what you found, but you don't interpret it - that happens in the discussion.
 
 ``` r
 # Be sure to install these packages before running this script
@@ -82,1014 +96,6 @@ filenames_forward_reads <- file.path(path, filenames_forward_reads)
 
 We can see from the quality profiles that most reads tend to get pretty bad in quality after around 200 bases.
 
-``` r
-# Place filtered files in filtered/ subdirectory
-# note this will fail if the directory doesn't exist
-filter_path <- file.path("output", "filtered")
-filtered_reads_path <- file.path(filter_path,
-                                 paste0(sample_names,
-                                        "_filt.fastq.gz"))
-
-# See ?filterAndTrim for details on the parameters
-# See here for adjustments for 454 data:
-# https://benjjneb.github.io/dada2/
-#     faq.html#can-i-use-dada2-with-my-454-or-ion-torrent-data
-filtered_output <- filterAndTrim(fwd = filenames_forward_reads,
-                                 filt = filtered_reads_path,
-                                 maxLen = 300,
-                                 maxN = 0, # discard any seqs with Ns
-                                 maxEE = 3, # allow w/ up to 3 expected errors
-                                 truncQ = 2, # cut off if quality gets this low
-                                 rm.phix = TRUE,
-                                 compress = TRUE,
-                                 multithread = FALSE)
-```
-
-``` r
-# this build error models from each of the samples
-errors_forward_reads <- learnErrors(filtered_reads_path,
-                                   multithread = FALSE)
-```
-
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## Not all sequences were the same length.
-    ## 28802208 total bases in 125531 reads from 115 samples will be used for learning the error rates.
-    ## Initializing error rates to maximum possible estimate.
-    ## selfConsist step 1 ...................................................................................................................
-    ##    selfConsist step 2
-    ##    selfConsist step 3
-    ##    selfConsist step 4
-    ##    selfConsist step 5
-    ## Convergence after  5  rounds.
-
-``` r
-# get rid of any duplicated sequences
-dereplicated_forward_reads <- derepFastq(filtered_reads_path,
-                                         verbose = TRUE)
-```
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938262_filt.fastq.gz
-
-    ## Encountered 139 unique sequences from 318 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938263_filt.fastq.gz
-
-    ## Encountered 416 unique sequences from 895 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938264_filt.fastq.gz
-
-    ## Encountered 317 unique sequences from 663 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938265_filt.fastq.gz
-
-    ## Encountered 117 unique sequences from 216 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938266_filt.fastq.gz
-
-    ## Encountered 135 unique sequences from 325 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938267_filt.fastq.gz
-
-    ## Encountered 166 unique sequences from 563 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938268_filt.fastq.gz
-
-    ## Encountered 212 unique sequences from 571 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938269_filt.fastq.gz
-
-    ## Encountered 607 unique sequences from 1267 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938270_filt.fastq.gz
-
-    ## Encountered 704 unique sequences from 1396 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938271_filt.fastq.gz
-
-    ## Encountered 697 unique sequences from 1204 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938272_filt.fastq.gz
-
-    ## Encountered 614 unique sequences from 1034 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938273_filt.fastq.gz
-
-    ## Encountered 662 unique sequences from 1079 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938274_filt.fastq.gz
-
-    ## Encountered 818 unique sequences from 1543 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938275_filt.fastq.gz
-
-    ## Encountered 744 unique sequences from 1239 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938276_filt.fastq.gz
-
-    ## Encountered 696 unique sequences from 1352 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938277_filt.fastq.gz
-
-    ## Encountered 592 unique sequences from 1162 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938278_filt.fastq.gz
-
-    ## Encountered 749 unique sequences from 1533 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938279_filt.fastq.gz
-
-    ## Encountered 528 unique sequences from 1102 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938280_filt.fastq.gz
-
-    ## Encountered 530 unique sequences from 956 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938281_filt.fastq.gz
-
-    ## Encountered 580 unique sequences from 1124 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938282_filt.fastq.gz
-
-    ## Encountered 523 unique sequences from 1099 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938283_filt.fastq.gz
-
-    ## Encountered 638 unique sequences from 1355 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938284_filt.fastq.gz
-
-    ## Encountered 600 unique sequences from 1263 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938285_filt.fastq.gz
-
-    ## Encountered 536 unique sequences from 1261 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938286_filt.fastq.gz
-
-    ## Encountered 659 unique sequences from 1308 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938287_filt.fastq.gz
-
-    ## Encountered 492 unique sequences from 1106 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938288_filt.fastq.gz
-
-    ## Encountered 251 unique sequences from 474 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938289_filt.fastq.gz
-
-    ## Encountered 551 unique sequences from 1240 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938290_filt.fastq.gz
-
-    ## Encountered 440 unique sequences from 970 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938291_filt.fastq.gz
-
-    ## Encountered 579 unique sequences from 1215 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938292_filt.fastq.gz
-
-    ## Encountered 401 unique sequences from 691 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938293_filt.fastq.gz
-
-    ## Encountered 486 unique sequences from 820 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938294_filt.fastq.gz
-
-    ## Encountered 419 unique sequences from 1160 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938295_filt.fastq.gz
-
-    ## Encountered 505 unique sequences from 1059 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938296_filt.fastq.gz
-
-    ## Encountered 331 unique sequences from 620 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938297_filt.fastq.gz
-
-    ## Encountered 668 unique sequences from 1215 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938298_filt.fastq.gz
-
-    ## Encountered 640 unique sequences from 1450 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938299_filt.fastq.gz
-
-    ## Encountered 755 unique sequences from 1219 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938300_filt.fastq.gz
-
-    ## Encountered 531 unique sequences from 1232 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938301_filt.fastq.gz
-
-    ## Encountered 515 unique sequences from 943 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938302_filt.fastq.gz
-
-    ## Encountered 590 unique sequences from 1392 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938303_filt.fastq.gz
-
-    ## Encountered 504 unique sequences from 1065 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938304_filt.fastq.gz
-
-    ## Encountered 633 unique sequences from 1230 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938305_filt.fastq.gz
-
-    ## Encountered 554 unique sequences from 1049 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938306_filt.fastq.gz
-
-    ## Encountered 296 unique sequences from 502 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938307_filt.fastq.gz
-
-    ## Encountered 667 unique sequences from 1384 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938308_filt.fastq.gz
-
-    ## Encountered 625 unique sequences from 1112 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938309_filt.fastq.gz
-
-    ## Encountered 227 unique sequences from 674 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938310_filt.fastq.gz
-
-    ## Encountered 291 unique sequences from 1125 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938311_filt.fastq.gz
-
-    ## Encountered 238 unique sequences from 1023 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938312_filt.fastq.gz
-
-    ## Encountered 309 unique sequences from 1189 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938313_filt.fastq.gz
-
-    ## Encountered 385 unique sequences from 1273 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938314_filt.fastq.gz
-
-    ## Encountered 237 unique sequences from 809 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938315_filt.fastq.gz
-
-    ## Encountered 342 unique sequences from 1098 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938316_filt.fastq.gz
-
-    ## Encountered 453 unique sequences from 1234 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938317_filt.fastq.gz
-
-    ## Encountered 185 unique sequences from 529 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938318_filt.fastq.gz
-
-    ## Encountered 88 unique sequences from 241 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938319_filt.fastq.gz
-
-    ## Encountered 440 unique sequences from 1328 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938320_filt.fastq.gz
-
-    ## Encountered 292 unique sequences from 723 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938321_filt.fastq.gz
-
-    ## Encountered 543 unique sequences from 1947 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938322_filt.fastq.gz
-
-    ## Encountered 527 unique sequences from 1416 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938323_filt.fastq.gz
-
-    ## Encountered 363 unique sequences from 1127 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938324_filt.fastq.gz
-
-    ## Encountered 225 unique sequences from 752 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938325_filt.fastq.gz
-
-    ## Encountered 530 unique sequences from 1320 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938326_filt.fastq.gz
-
-    ## Encountered 618 unique sequences from 1685 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938327_filt.fastq.gz
-
-    ## Encountered 251 unique sequences from 753 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938328_filt.fastq.gz
-
-    ## Encountered 362 unique sequences from 1022 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938329_filt.fastq.gz
-
-    ## Encountered 277 unique sequences from 1245 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938330_filt.fastq.gz
-
-    ## Encountered 598 unique sequences from 1531 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938331_filt.fastq.gz
-
-    ## Encountered 426 unique sequences from 1160 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938332_filt.fastq.gz
-
-    ## Encountered 395 unique sequences from 1143 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938333_filt.fastq.gz
-
-    ## Encountered 369 unique sequences from 1211 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938334_filt.fastq.gz
-
-    ## Encountered 249 unique sequences from 831 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938335_filt.fastq.gz
-
-    ## Encountered 470 unique sequences from 1489 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938336_filt.fastq.gz
-
-    ## Encountered 374 unique sequences from 1409 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938337_filt.fastq.gz
-
-    ## Encountered 280 unique sequences from 1075 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938338_filt.fastq.gz
-
-    ## Encountered 332 unique sequences from 1332 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938339_filt.fastq.gz
-
-    ## Encountered 360 unique sequences from 1127 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938340_filt.fastq.gz
-
-    ## Encountered 386 unique sequences from 1258 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938341_filt.fastq.gz
-
-    ## Encountered 165 unique sequences from 499 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938342_filt.fastq.gz
-
-    ## Encountered 256 unique sequences from 1184 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938343_filt.fastq.gz
-
-    ## Encountered 310 unique sequences from 1017 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938344_filt.fastq.gz
-
-    ## Encountered 273 unique sequences from 1109 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938345_filt.fastq.gz
-
-    ## Encountered 317 unique sequences from 1285 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938346_filt.fastq.gz
-
-    ## Encountered 294 unique sequences from 1067 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938347_filt.fastq.gz
-
-    ## Encountered 348 unique sequences from 1049 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938348_filt.fastq.gz
-
-    ## Encountered 289 unique sequences from 1056 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938349_filt.fastq.gz
-
-    ## Encountered 358 unique sequences from 1493 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938350_filt.fastq.gz
-
-    ## Encountered 336 unique sequences from 1348 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938351_filt.fastq.gz
-
-    ## Encountered 238 unique sequences from 742 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938352_filt.fastq.gz
-
-    ## Encountered 482 unique sequences from 2061 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938353_filt.fastq.gz
-
-    ## Encountered 142 unique sequences from 452 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938354_filt.fastq.gz
-
-    ## Encountered 397 unique sequences from 1499 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938355_filt.fastq.gz
-
-    ## Encountered 524 unique sequences from 2281 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938356_filt.fastq.gz
-
-    ## Encountered 389 unique sequences from 1338 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938357_filt.fastq.gz
-
-    ## Encountered 277 unique sequences from 1090 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938358_filt.fastq.gz
-
-    ## Encountered 239 unique sequences from 902 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938359_filt.fastq.gz
-
-    ## Encountered 489 unique sequences from 1584 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938360_filt.fastq.gz
-
-    ## Encountered 328 unique sequences from 1052 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938361_filt.fastq.gz
-
-    ## Encountered 322 unique sequences from 1277 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938362_filt.fastq.gz
-
-    ## Encountered 130 unique sequences from 609 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938363_filt.fastq.gz
-
-    ## Encountered 509 unique sequences from 2013 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938364_filt.fastq.gz
-
-    ## Encountered 353 unique sequences from 1252 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938365_filt.fastq.gz
-
-    ## Encountered 187 unique sequences from 819 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938366_filt.fastq.gz
-
-    ## Encountered 92 unique sequences from 277 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938367_filt.fastq.gz
-
-    ## Encountered 327 unique sequences from 1077 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938368_filt.fastq.gz
-
-    ## Encountered 577 unique sequences from 1745 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938369_filt.fastq.gz
-
-    ## Encountered 378 unique sequences from 1528 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938370_filt.fastq.gz
-
-    ## Encountered 260 unique sequences from 1191 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938371_filt.fastq.gz
-
-    ## Encountered 277 unique sequences from 996 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938372_filt.fastq.gz
-
-    ## Encountered 243 unique sequences from 841 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938373_filt.fastq.gz
-
-    ## Encountered 377 unique sequences from 982 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938374_filt.fastq.gz
-
-    ## Encountered 272 unique sequences from 462 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938375_filt.fastq.gz
-
-    ## Encountered 267 unique sequences from 718 total sequences read.
-
-    ## Not all sequences were the same length.
-
-    ## Dereplicating sequence entries in Fastq file: output/filtered/ERR1938376_filt.fastq.gz
-
-    ## Encountered 300 unique sequences from 581 total sequences read.
-
-    ## Not all sequences were the same length.
-
-``` r
-# Name the derep-class objects by the sample names
-names(dereplicated_forward_reads) <- sample_names
-```
-
-``` r
-# parameters adjusted based on recommendations for 454 data here:
-# https://benjjneb.github.io/dada2/
-#     faq.html#can-i-use-dada2-with-my-454-or-ion-torrent-data
-dada_forward_reads <- dada(dereplicated_forward_reads,
-                           err = errors_forward_reads,
-                           HOMOPOLYMER_GAP_PENALTY = -1, # reduce penalty bc 454
-                           BAND_SIZE = 32) # performs local alignments bc indels
-```
-
-    ## Sample 1 - 318 reads in 139 unique sequences.
-    ## Sample 2 - 895 reads in 416 unique sequences.
-    ## Sample 3 - 663 reads in 317 unique sequences.
-    ## Sample 4 - 216 reads in 117 unique sequences.
-    ## Sample 5 - 325 reads in 135 unique sequences.
-    ## Sample 6 - 563 reads in 166 unique sequences.
-    ## Sample 7 - 571 reads in 212 unique sequences.
-    ## Sample 8 - 1267 reads in 607 unique sequences.
-    ## Sample 9 - 1396 reads in 704 unique sequences.
-    ## Sample 10 - 1204 reads in 697 unique sequences.
-    ## Sample 11 - 1034 reads in 614 unique sequences.
-    ## Sample 12 - 1079 reads in 662 unique sequences.
-    ## Sample 13 - 1543 reads in 818 unique sequences.
-    ## Sample 14 - 1239 reads in 744 unique sequences.
-    ## Sample 15 - 1352 reads in 696 unique sequences.
-    ## Sample 16 - 1162 reads in 592 unique sequences.
-    ## Sample 17 - 1533 reads in 749 unique sequences.
-    ## Sample 18 - 1102 reads in 528 unique sequences.
-    ## Sample 19 - 956 reads in 530 unique sequences.
-    ## Sample 20 - 1124 reads in 580 unique sequences.
-    ## Sample 21 - 1099 reads in 523 unique sequences.
-    ## Sample 22 - 1355 reads in 638 unique sequences.
-    ## Sample 23 - 1263 reads in 600 unique sequences.
-    ## Sample 24 - 1261 reads in 536 unique sequences.
-    ## Sample 25 - 1308 reads in 659 unique sequences.
-    ## Sample 26 - 1106 reads in 492 unique sequences.
-    ## Sample 27 - 474 reads in 251 unique sequences.
-    ## Sample 28 - 1240 reads in 551 unique sequences.
-    ## Sample 29 - 970 reads in 440 unique sequences.
-    ## Sample 30 - 1215 reads in 579 unique sequences.
-    ## Sample 31 - 691 reads in 401 unique sequences.
-    ## Sample 32 - 820 reads in 486 unique sequences.
-    ## Sample 33 - 1160 reads in 419 unique sequences.
-    ## Sample 34 - 1059 reads in 505 unique sequences.
-    ## Sample 35 - 620 reads in 331 unique sequences.
-    ## Sample 36 - 1215 reads in 668 unique sequences.
-    ## Sample 37 - 1450 reads in 640 unique sequences.
-    ## Sample 38 - 1219 reads in 755 unique sequences.
-    ## Sample 39 - 1232 reads in 531 unique sequences.
-    ## Sample 40 - 943 reads in 515 unique sequences.
-    ## Sample 41 - 1392 reads in 590 unique sequences.
-    ## Sample 42 - 1065 reads in 504 unique sequences.
-    ## Sample 43 - 1230 reads in 633 unique sequences.
-    ## Sample 44 - 1049 reads in 554 unique sequences.
-    ## Sample 45 - 502 reads in 296 unique sequences.
-    ## Sample 46 - 1384 reads in 667 unique sequences.
-    ## Sample 47 - 1112 reads in 625 unique sequences.
-    ## Sample 48 - 674 reads in 227 unique sequences.
-    ## Sample 49 - 1125 reads in 291 unique sequences.
-    ## Sample 50 - 1023 reads in 238 unique sequences.
-    ## Sample 51 - 1189 reads in 309 unique sequences.
-    ## Sample 52 - 1273 reads in 385 unique sequences.
-    ## Sample 53 - 809 reads in 237 unique sequences.
-    ## Sample 54 - 1098 reads in 342 unique sequences.
-    ## Sample 55 - 1234 reads in 453 unique sequences.
-    ## Sample 56 - 529 reads in 185 unique sequences.
-    ## Sample 57 - 241 reads in 88 unique sequences.
-    ## Sample 58 - 1328 reads in 440 unique sequences.
-    ## Sample 59 - 723 reads in 292 unique sequences.
-    ## Sample 60 - 1947 reads in 543 unique sequences.
-    ## Sample 61 - 1416 reads in 527 unique sequences.
-    ## Sample 62 - 1127 reads in 363 unique sequences.
-    ## Sample 63 - 752 reads in 225 unique sequences.
-    ## Sample 64 - 1320 reads in 530 unique sequences.
-    ## Sample 65 - 1685 reads in 618 unique sequences.
-    ## Sample 66 - 753 reads in 251 unique sequences.
-    ## Sample 67 - 1022 reads in 362 unique sequences.
-    ## Sample 68 - 1245 reads in 277 unique sequences.
-    ## Sample 69 - 1531 reads in 598 unique sequences.
-    ## Sample 70 - 1160 reads in 426 unique sequences.
-    ## Sample 71 - 1143 reads in 395 unique sequences.
-    ## Sample 72 - 1211 reads in 369 unique sequences.
-    ## Sample 73 - 831 reads in 249 unique sequences.
-    ## Sample 74 - 1489 reads in 470 unique sequences.
-    ## Sample 75 - 1409 reads in 374 unique sequences.
-    ## Sample 76 - 1075 reads in 280 unique sequences.
-    ## Sample 77 - 1332 reads in 332 unique sequences.
-    ## Sample 78 - 1127 reads in 360 unique sequences.
-    ## Sample 79 - 1258 reads in 386 unique sequences.
-    ## Sample 80 - 499 reads in 165 unique sequences.
-    ## Sample 81 - 1184 reads in 256 unique sequences.
-    ## Sample 82 - 1017 reads in 310 unique sequences.
-    ## Sample 83 - 1109 reads in 273 unique sequences.
-    ## Sample 84 - 1285 reads in 317 unique sequences.
-    ## Sample 85 - 1067 reads in 294 unique sequences.
-    ## Sample 86 - 1049 reads in 348 unique sequences.
-    ## Sample 87 - 1056 reads in 289 unique sequences.
-    ## Sample 88 - 1493 reads in 358 unique sequences.
-    ## Sample 89 - 1348 reads in 336 unique sequences.
-    ## Sample 90 - 742 reads in 238 unique sequences.
-    ## Sample 91 - 2061 reads in 482 unique sequences.
-    ## Sample 92 - 452 reads in 142 unique sequences.
-    ## Sample 93 - 1499 reads in 397 unique sequences.
-    ## Sample 94 - 2281 reads in 524 unique sequences.
-    ## Sample 95 - 1338 reads in 389 unique sequences.
-    ## Sample 96 - 1090 reads in 277 unique sequences.
-    ## Sample 97 - 902 reads in 239 unique sequences.
-    ## Sample 98 - 1584 reads in 489 unique sequences.
-    ## Sample 99 - 1052 reads in 328 unique sequences.
-    ## Sample 100 - 1277 reads in 322 unique sequences.
-    ## Sample 101 - 609 reads in 130 unique sequences.
-    ## Sample 102 - 2013 reads in 509 unique sequences.
-    ## Sample 103 - 1252 reads in 353 unique sequences.
-    ## Sample 104 - 819 reads in 187 unique sequences.
-    ## Sample 105 - 277 reads in 92 unique sequences.
-    ## Sample 106 - 1077 reads in 327 unique sequences.
-    ## Sample 107 - 1745 reads in 577 unique sequences.
-    ## Sample 108 - 1528 reads in 378 unique sequences.
-    ## Sample 109 - 1191 reads in 260 unique sequences.
-    ## Sample 110 - 996 reads in 277 unique sequences.
-    ## Sample 111 - 841 reads in 243 unique sequences.
-    ## Sample 112 - 982 reads in 377 unique sequences.
-    ## Sample 113 - 462 reads in 272 unique sequences.
-    ## Sample 114 - 718 reads in 267 unique sequences.
-    ## Sample 115 - 581 reads in 300 unique sequences.
-
-``` r
-# check dada results
-# dada_forward_reads
-```
-
-``` r
-# produce the 'site by species matrix'
-sequence_table <- makeSequenceTable(dada_forward_reads)
-```
-
-    ## The sequences being tabled vary in length.
-
-``` r
-# Check for and remove chimeras
-sequence_table_nochim <- removeBimeraDenovo(sequence_table,
-                                            method = "consensus",
-                                            multithread = FALSE,
-                                            verbose = TRUE)
-```
-
-    ## Identified 6 bimeras out of 1539 input sequences.
-
-``` r
-# What percent of our reads are non-chimeric?
-non_chimeric_reads <- round(sum(sequence_table_nochim) / sum(sequence_table),
-                            digits = 4) * 100
-```
-
 After removing chimeras, we were left with 99.97% of our cleaned reads.
 
 ``` r
@@ -1123,7 +129,7 @@ export_taxa_table_and_seqs(sequence_table_nochim,
 # made up of known sequences
  taxa <- assignTaxonomy(sequence_table_nochim,
                        "data/training/rdp_train_set_16.fa.gz",
-                       multithread = TRUE,
+                       multithread = FALSE,
                        tryRC = TRUE) # also check with seq reverse compliments
 ```
 
@@ -1155,64 +161,91 @@ phyloseq_obj <- phyloseq(otu_table(sequence_table_nochim,
 
 ``` r
 # bar plot of sample source (keyboard key or finger) and Abundance of sequences
-plot_bar(phyloseq_obj, x = "sample_source",
+plot_bar(phyloseq_obj, x = "sample_source", #the phyloseq was created above
          title = "Sequence abundance for all sample sources")
 ```
 
-![](Analysis_Report_01_amplicons_files/figure-markdown_github/sample-source-abundance-1.png) **Figure 1**: Abundance of sequences within the sapmle\_sourse(s). We see how the abundance of sequences on the each key are not all even. This sparked interest on the difference of abundance between the U and Q keys. From here a focus on the hand or finger used for each key will be compared.
+![](Analysis_Report_01_amplicons_files/figure-markdown_github/sample-source-sequence-abundance-barplot-1.png)
+
+**Figure 1**: Abundance of sequences within the sample\_source(s). We see how the abundance of sequences on the each key are not all even. This sparked interest on the difference of abundance between the U and Q keys. From here a focus on the hand or finger used for each key will be compared.
 
 ``` r
 # bar plot of samples from Q and U keys and Abundance of sequences
-phyloseq_obj_qu <- subset_samples(phyloseq_obj,
+phyloseq_obj_qu <- subset_samples(phyloseq_obj, # we made a new phyloseq object
                                   sample_source == "Ukey" |
                                     sample_source == "Qkey")
 plot_bar(phyloseq_obj_qu, x = "sample_source",
+         # we used plot bar because we had a phyloseq class
          title = "Sequence abundance on Q and U keys")
 ```
 
-![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-abundance-for-q-and-u-keys-1.png) **Figure 2**: Abundance of sequences within the sapmle\_sourse of the Ukey and Qkey. Since in the English language there are very few words and no common words that use the letter "Q" without "U" it was unexpected to see how the ideally more isolated Qkey having double the amount of sequence abundance. From this it will be invesitgated to see if left handed keys carry a higher abundance than right keys or the type of finger used is the cause.
+![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-abundance-for-q-and-u-keys-barplot-1.png)
+
+**Figure 2**: Abundance of sequences within the sample\_source of the Ukey and Qkey. Since in the English language there are very few words and no common words that use the letter "Q" without "U" it was unexpected to see how the ideally more isolated Qkey having double the amount of sequence abundance. From this it will be investigated to see if left handed keys carry a higher abundance than right keys or the type of finger used is the cause.
+
+``` r
+# bar plot of samples from A, Q, and Z keys and Abundance of sequences
+phyloseq_obj_aqz <- subset_samples(phyloseq_obj, # we made a new phyloseq object
+                                  sample_source == "Qkey" |
+                                    sample_source == "Akey" |
+                                    sample_source == "Zkey")
+plot_bar(phyloseq_obj_aqz, x = "sample_source",
+         title = "Sequence abundance on A, Q, and Z keys")
+```
+
+![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-abundance-for-a-q-z-keys-barplot-1.png)
+
+**Figure 3**: Abundance of sequences within the sample\_source of the Akey, Qkey, and Zkey. All three letter keys that the left little finger interacts with were plotted together. This was to see if frequency could be used to be used as a predictor for sequence abundance. Here, the relative frequency pairs up with the correct relative sequence abundance.
 
 ``` r
 # bar plot of samples from L and S keys and Abundance of sequences
-phyloseq_obj_sl <- subset_samples(phyloseq_obj,
+phyloseq_obj_sl <- subset_samples(phyloseq_obj, # we made a new phyloseq object
                                   sample_source == "Skey" |
                                     sample_source == "Lkey")
 plot_bar(phyloseq_obj_sl, x = "sample_source",
          title = "Sequence abundance on L and S keys")
 ```
 
-![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-abundance-for-s-and-l-keys-1.png) **Figure 3**: Abundance of sequences within the sapmle\_sourse of the Skey and Lkey. To separate handedness and to keep the fingers consistent, letters S and L were selected. It shows that the Lkey, which is on the right side of the keyboard, has a higher abundance. The data for the keys touched by the ringerfinger shows how either hand can led to a higher abundance. It is important to note that the Qkey had a higher abundance eventhough it is likely to be exposed or touched by the same finger that touches the Skey.
+![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-abundance-for-s-and-l-keys-barplot-1.png)
+
+**Figure 4**: Abundance of sequences within the sample\_source of the Skey and Lkey. To separate handedness and to keep the fingers consistent, letters S and L were selected. It shows that the Lkey, which is on the right side of the keyboard, has a higher abundance. The data for the keys touched by the ringer-finger shows how either hand can led to a higher abundance. It is important to note that the Qkey had a higher abundance even though it is likely to be exposed or touched by the same finger that touches the Skey.
 
 ``` r
 # bar plot of samples from G and H keys and Abundance of sequences
-phyloseq_obj_gh <- subset_samples(phyloseq_obj,
+phyloseq_obj_gh <- subset_samples(phyloseq_obj, # we made a new phyloseq object
                                   sample_source == "Gkey" |
                                     sample_source == "Hkey")
 plot_bar(phyloseq_obj_gh, x = "sample_source",
          title = "Sequence abundance on G and H keys")
 ```
 
-![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-abundance-for-g-and-h-keys-1.png) **Figure 4**: Abundance of sequences within the sapmle\_sourse of the Gkey and Hkey. As shown, the Gkey as on the left side has a higher abundance. The index fingers also show a higher overall abundance than the previous graphs.
+![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-abundance-for-g-and-h-keys-barplot-1.png)
+
+**Figure 5**: Abundance of sequences within the sample\_source of the Gkey and Hkey. As shown, the Gkey as on the left side has a higher abundance. The index fingers also show a higher overall abundance than the previous graphs.
 
 ``` r
 # bar plot of samples from E and O keys and Abundance of sequences
-phyloseq_obj_eo <- subset_samples(phyloseq_obj,
+phyloseq_obj_eo <- subset_samples(phyloseq_obj, # we made a new phyloseq object
                                   sample_source == "Ekey" |
-                                    sample_source == "Okey")
+                                  sample_source == "Okey")
 plot_bar(phyloseq_obj_eo, x = "sample_source",
                                   title = "Sequence abundance on E and O keys")
 ```
 
-![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-abundance-for-e-and-o-keys-1.png) **Figure 5**: Abundance of sequences within the sapmle\_sourse of the Ekey and Okey. The Ekey and the Okey were selected for they are the most frequently used key on their respective side. Both the use and the abundance of the Ekey are greater than the Okey. Only one of our graphs show that a key on the right side had a greater abundance.
+![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-abundance-for-e-and-o-keys-barplot-1.png)
+
+**Figure 6**: Abundance of sequences within the sample\_source of the Ekey and Okey. The Ekey and the Okey were selected for they are the most frequently used key on their respective side. Both the use and the abundance of the Ekey are greater than the Okey. Only one of our graphs show that a key on the right side had a greater abundance.
 
 ``` r
 # box plot of left and right handed keys sequence abundance
 phyloseq_table <- psmelt(phyloseq_obj)
-
+# we used used psmelt to combine the tables in phyloseq_obj into phyloseq_table
+# this is to combine everything into one table
 phyloseq_abundance_by_key <- phyloseq_table %>%
 group_by(sample_source) %>%
+# we were only interested in the letter keys
 summarize(sumAbundance = sum(Abundance))
-
+# we added all of the abundances so that we could see a handed trend
 phyloseq_abundance_by_key$hand <-
   ifelse(phyloseq_abundance_by_key$sample_source %in%
        c("Qkey", "Wkey", "Ekey", "Rkey", "Akey", "Skey", "Dkey",
@@ -1225,37 +258,81 @@ phyloseq_abundance_by_key$hand <-
                      == "Space_bar", "B", "NA")
               )
        )
-
+# the if else was a little complicated in that we had to make a vector c to
+# then list out what we deemed as true or false
 phyloseq_abundance_by_key_lr <- phyloseq_abundance_by_key %>%
   filter(hand == "L" | hand == "R")
+# we have the last if else just in case we wanted to see it later and we have
+# already constructed the code for it
 ggplot(phyloseq_abundance_by_key_lr, aes(y = sumAbundance, x = hand)) +
 geom_boxplot() + ggtitle("Comparing abundance of sequences per hand")
 ```
 
-![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-abundance-between-left-and-right-hand-keys-1.png) **Figure 6**: Comparing abundance of sequences of the left and right hands. Instead of comparing letter by letter, this box plot shows the general trend that the left keys had a higher sequence abundance.
+![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-abundance-between-left-and-right-hand-keys-boxplot-1.png)
+
+**Figure 7**: Comparing abundance of sequences of the left and right hands. Instead of comparing letter by letter, this box plot shows the general trend that the left keys had a higher sequence abundance.
 
 ``` r
 # bar plot of mean abundance for left and right handed keys
 
 phyloseq_abundance_by_key_lrb <- phyloseq_abundance_by_key %>%
   filter(hand == "L" | hand == "R" | hand == "B") %>%
+  # we still did not add NA but wanted to see the mean abundance on both as well
   group_by(hand) %>%
 summarize(meanSumAbundance = mean(sumAbundance))
+# we took the mean to better understand what the typical abundance is for each
 ggplot(phyloseq_abundance_by_key_lrb, aes(x = hand,
                                               y = meanSumAbundance)) +
   geom_col() +
  ggtitle("Comparing mean abundance of sequences left and right handed keys")
 ```
 
-![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-mean-abundance-between-handed-keys-1.png) **Figure 7**: Comparing abundance of sequences for left and right handed keys and the space bar. The space bar has the highest mean abundance while the trend of the left hand having a higher sequence abundance can still be observed. The difference between the mean abundance of either hand is dwarfed when taking into condideration the keys that are touched by both. \# Discussion
+![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-mean-abundance-between-handed-keys-barplot-1.png) **Figure 8**: Comparing abundance of sequences for left and right handed keys and the space bar. The space bar has the highest mean abundance while the trend of the left hand having a higher sequence abundance can still be observed. The difference between the mean abundance of either hand is dwarfed when taking into consideration the keys that are touched by both.
 
-Add around 2-3 pages interpreting your results and considering future directions one might take in analyzing these data.
+In class, Dr. Zimmerman made a bar plot showing the sequence abundance on each sample source. Observing an overall difference between the keys was as expected. However, as shown in Figure 1, there was a difference in the abundance of sequences on the Qkey and the Ukey. A bar plot was then made to eliminate distractions and focus on the Qkey and the Ukey. In Figure 2, the Qkey almost reaches the 2500 mark on the abundance axis meanwhile the Ukey is at 1000. The Qkey has more than double the amount of sequence abundance than the Ukey when the Ukey has more than double the frequency as stated before (Solso and King, 1976). To focus on the keys touched primarily by the little finger, Figure 3 shows the sequence abundance for the Akey, Qkey, and the Zkey. The relative frequencies and sequence abundances match. To compare the sequence abundance of the left little finger and to inquire about handedness, Figure 4 was created. Here we see that the Skey, which is touched by the ring-finger on the left hand, has a lower sequence abundance than the Lkey that is touched by the ring-finger on the right hand. Neither key had a greater sequence abundance than the Qkey even though they are on the home and have a higher frequency (Solso and King, 1976). In Figure 5 I compared the Gkey and the Hkey to see if there was a difference in sequence abundance for the index finger based off of handedness. Both keys had a higher sequence abundance than any key previously focused on with the Gkey, which is on the left side, having a higher sequence abundance by almost a 1000. The most frequently used letter key on the left side was compared to the key on the right side since handedness appears to have a trend. In Figure 6 the Ekey shows a 50% higher sequence abundance than the Okey. Both are vowels that are frequently used and are on the back row. The Ekey is used by the left middle finger and the Okey is used by the same finger as the Lkey, the ring-finger on the right hand. To further inspect how handedness could also be used as a predictor for sequence abundance, a box plot was made which encompasses all the letter keys on the left to those on the right. Maintaining the consistency observed in the other figures, Figure 7 shows how the left handed letter keys have a higher sequence abundance than the right. Lastly, Figure 8 shows the mean abundance of sequences between left and right handed letter keys along with the space bar. The space bar, which is used by both hands, showed a much higher sequence abundance than expected. However, I was advised to consult the metadata and found that three females were included in the space bar sample.
+
+Discussion
+==========
+
+To my knowledge, physical contact must be the primary way a computer keyboard in its traditional environment acquires bacteria. Although bacteria are everywhere, like any organism, they flourish under conditions that are fit for them. Either that or the exposure to a surface is so consistently repetitive that they are either replenished or gain nutrients from such an event. My hypothesis is that as frequency increases, so does the sequence abundance per key. In many ways this hypothesis was supported, although my first thought while looking at Figure 1 was how could the Ukey have fewer sequence abundance than the Qkey. We will first discuss how the results met with our expectations based on the mechanics of the common languages used in Colorado, the QWERTY keyboard, and previous studies on the hand microbime. Then we will review the discrepancies within the data that alluded to possible alternate outcomes. In all, I believe that the hypothesis was supported, but frequency was not the only indicator found to be able to predict sequence abundance.
+
+In short, the frequency of the use of the key could be used as a predictor of sequence abundance, but handedness was incidentally found as well. In Figure 1 we see that the sequence abundance is not even across all the keys. This is as predicted since each key has its own frequency of use. Looking at a glance, it seems that most letters are within their respected use. Something that I did not consider until later was how there would be a maximum or limit to the observed sequence abundance. No key reaches above the 4000 mark. It has been found that on average, less than 3200 sequences are found on each hand (Fierer *et al.*, 2008). Our data is the sum of three individuals, which is interesting to see that the maximum is so low. The cause of this is probably due to the maximum of transferable bacteria from a male human hand onto an object. As previously mentioned, it is believed that on our hands there are residential bacteria and transient bacteria. Perhaps the majority of the sequences we see on the keyboards are transient or transferable bacteria, a number that is much smaller than the overall amount of bacteria on the hands. Although initially plotted due to observing the questionably contaminated Qkey, Figure 3 supports the concept of frequency of key use to sequence abundance, and since ideally it is only used by the left little finger, we should see more similarity if sequence abundance was based on the type of finger used. The type of finger used could have been an indicator for sequence abundance since each finger could have a higher contamination than the others. This could be due to neglect in hand washing or more probable, that the finger in question interacts with the environment more frequently. In a world dominated by right handed people, the left little finger should be the finger that has the least contamination or at least have an observable hindrance in the amount of sequences found on the keys it touches. However, out data does not support this and shows that the little finger on the left hand is just as efficient of a bacterial carrier than any other finger. To try a different approach to frequency of use, Figure 4 shows how keys that are on the home row where the typists hands lay at rest, have a slightly similar sequence abundance. This again supports the frequency of use hypothesis. A similar situation is observed for the Gkey and the Hkey, with the left sided key (G) having a higher sequence abundance. Taking it to the extreme, the most frequently used keys were compared. Although the Ekey is used a lot more frequently, the general pattern of the keys reaching a maximum number of sequence abundance was not reached by the Okey, which instead sits right at the 2000 count. It can be said that only the Ekey supports the frequency of use as a predictor. As a whole, the keys Plated in the bar plots do not show the trend that the back row keys are the most frequently used, followed by the home row, and lastly the front row. By looking at Figure 1, it would appear that there are keys that go in line with the row frequency, there are plenty of keys that do not match up. It has been said that 56% of the typing on a QWERTY keyboard is focused on the left side, and we get a concept of that in Figure 7. The left handed keys have a higher sequence abundance, but not by an extraordinary margin. Figure 8 continues to support the concept of using handedness as an indicator of sequence abundance. All of our figures with the exception of Figure 4, support the notion that there are more bacteria on the left side of the keyboard. In all, the type of finger or row did not seem to be an indicator of sequence abundance, but handedness and the frequency of the key could be used as indicators.
+
+Although mostly straight forward, there are a few times where the data did not match up with expectations or the literature. The first expectation noticed was how the much less used Qkey had such a high abundance. When compared to other keys touched by the little finger it behaved relatively appropriately, but the abundances were high considering the environmental interaction the little finger of a left hand experiences. It would have been interesting to see the sequence abundance of a tilde, tab, caps lock, and a correctly grouped left shift keys. Additionally, it would have been interesting to have more data on keys that the little finger on the right hand interacts with. Although the left side of the keyboard is used more, frequently used keys to the right should have a higher count of sequence abundance and the less frequently used keys on the left should have a lower count of sequence abundance. This was more notable when comparing the Ekey to the Okey. True, the Ekey is significantly used more, but the most frequently used key on the right side was dwarfed by it, which shouldn't be the case. As mentioned earlier, there seemed to be a limit for the count of sequence abundance on these keys, and it is a very curious thing that the Okey did not get close to this 4000 count limit as other, less frequently used keys did. A silly concept was that maybe microbes on the heavily used keys were "crushed", but after a quick read of how they can withstand high pressure (Timson and Short, 1965) and that finger ridges are large for them to probably go untouched, this is found to be invalid. I could not find any studies that looked at wiping bacteria off due to repetitive friction, and so this was also believed to be invalid. One concept is to look at these microbiomes on human hands as a continuous battle ground. The battle ground then switches when the microbes get transferred to this colder, less nutritious, drier, and potentially more hostile world that is the computer keyboard. Especially for those residential microbes that are comfortable with our immune system, a keyboard would not be an ideal location. So even if some of these keys were touched repeatedly, if a semi-stable and highly competitive microbiome grabs hold, then the diversity might reflect the number of microbes being presented to the area. To discuss one last discrepancy, Figure 8 show the space bar, a key potentially used by both hands, dominates the figure. However, as pointed out to me, the metadata shows how the space bar includes samples from three females. Since females tend to carry even more microbes on their hands due to a lower pH and other factors (Fierer *et al.*, 2008), the results of this figure is no longer surprising, but just frustrating.
+
+To summarize, only the frequency of use was expected to be an indicator of the count of sequence abundance, but handedness was also a strong predictor. There were some discrepancies within the data, and only some explanations could be drawn up to explain these occurrences. From the data set, there is not clear indication that any type of finger causes a higher sequence abundance.
 
 Sources Cited
 =============
 
+Betts-LaCroix,J. (2008) Keyboard with variable-sized keys.
+
 Callahan,B.J. *et al.* (2016) DADA2: High-resolution sample inference from illumina amplicon data. *Nature Methods*, **13**, 581–583.
+
+Caporaso,J.G. *et al.* (2011) Moving pictures of the human microbiome. *Genome biology*, **12**, R50.
+
+Choi,M.S. (1996) Computer with separate left hand and right hand operated keyboard units.
 
 Cole,J.R. *et al.* (2008) The ribosomal database project: Improved alignments and new tools for rRNA analysis. *Nucleic acids research*, **37**, D141–D145.
 
+Edmonds-Wilson,S.L. *et al.* (2015) Review of human hand microbiome research. *Journal of dermatological science*, **80**, 3–12.
+
+Fierer,N. *et al.* (2008) The influence of sex, handedness, and washing on the diversity of hand surface bacteria. *Proceedings of the National Academy of Sciences*, **105**, 17994–17999.
+
 McMurdie,P.J. and Holmes,S. (2013) Phyloseq: An r package for reproducible interactive analysis and graphics of microbiome census data. *PLoS ONE*, **8**, e61217.
+
+Noyes,J. (1983) The qwerty keyboard: A review. *International Journal of Man-Machine Studies*, **18**, 265–281.
+
+Potowski,K. and Carreira,M. (2010) Spanish in the usa. *Language diversity in the United States*, 66–80.
+
+Rosenthal,M. *et al.* (2013) Healthcare workers’ hand microbiome may mediate carriage of hospital pathogens. *Pathogens*, **3**, 1–13.
+
+Rosenthal,M. *et al.* (2014) Impact of technical sources of variation on the hand microbiome dynamics of healthcare workers. *PloS one*, **9**, e88999.
+
+Solso,R.L. and King,J.F. (1976) Frequency and versatility of letters in the english language. *Behavior Research Methods & Instrumentation*, **8**, 283–286.
+
+Spiegler,B.J. and Yeni-Komshian,G.H. (1983) Incidence of left-handed writing in a college population with reference to family patterns of hand preference. *Neuropsychologia*, **21**, 651–659.
+
+Timson,W. and Short,A. (1965) Resistance of microorganisms to hydrostatic pressure. *Biotechnology and Bioengineering*, **7**, 139–159.
+
+Zapka,C. *et al.* (2017) Comparison of standard culture-based method to culture-independent method for evaluation of hygiene effects on the hand microbiome. *MBio*, **8**, e00093–17.
