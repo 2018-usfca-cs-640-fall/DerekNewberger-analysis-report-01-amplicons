@@ -1,0 +1,338 @@
+Analysis Report 1: Amplicons and the Letter Q
+================
+Derek Newberger and help from Maddie Shehan
+November 11, 2018
+
+Introduction
+============
+
+Expanding technologies beckons the attempt to answer large questions with big data. Originally the data acquired for this question involved developing the forensic technique of using unique microbiomes left by fingers on a keyboard to link them to the owner of the keyboard. However, with such a large data set, there are other questions raise. My hypothesis is that the most frequently used keys on a keyboard would have the greatest sequence abundance. However, as observed by viewing a bar graph presented in class, this does not hold consistently true. Therefore, the major inconsistency to be studied is the Qkey, which has essentially double the sequence abundance than the Ukey.Hopefully this will shed some light as to how a key with a lower frequency of use has a much greater sequence abundance. In order to address some assumptions made, we have to consider the influence that language, the QWERTY keyboard, and human hand microbiomes have on sequence abundance. These themes will perhaps shed light as to how the relationship between frequency of key use and the sequence abundance found on a key.
+
+The language and the QWERTY keyboard influences how often and in what way a key is touched. In regard to language, we have to assume that individuals in Boulder Colorado who volunteered themselves and their keyboards typed in either English or Spanish. There are some words in the English language that use the letter Q without the letter U, however, those cases are rarely used. The frequency, or the percentage of occurrence for the letter Q is 0.10% and for the letter U is it 2.72% (Solso and King, 1976). The percent occurrence can be used as the frequency of use of the keys on keyboard. Therefore, it should be surprising that the sequence abundance for the Qkey is higher than the Ukey since it is used much less. Even in Spanish, the second most spoken and written language in the United States (Potowski and Carreira, 2010), only names of a foreign origin can use the letter Q without the letter U. The Ekey is the most frequently used (Betts-LaCroix, 2008) and holds the highest frequency of occurrence with 12.62% (Solso and King, 1976). Next, we have to assume that the individuals who were selected, typically typed in the traditional sense by using two hands on the middle or "home" line. Almost every key is exclusively used by either the left hand or right hand and the line drawn between them is clearly indicated (Choi, 1996). The QWERTY keyboard has become the standard order in how the letters are presented to us on a typing interphase (Noyes, 1983). It currently overloads the left hand since 57% of all typing is on the left side. The little fingers are responsible for more keys than most other fingers. The three rows are not used evenly, in that the home row is responsible for 32% of typing, the back row is responsible for 52%, and lastly the front row is responsible for only 16% (Noyes, 1983). This will guide us as to what we choose to focus on and what we find interesting. We would have reason to suspect that the left side of the keyboard would have more exposure than the right side of the keyboard and therefore, probably have a slightly higher relative abundance. If continuing to make the connection between higher frequency of use, the higher sequence abundance, than the back row will have the highest, followed by the home row, and lastly it would be as predicted to see any comparisons using the front row to have a comparatively low sequence abundance.
+
+The general nature of the microbiome of the hand influences what the sequence abundance on the keys. Although not clearly stated in this data set like the previous data set, the handedness of the subjects was omitted. However, if Fierer et al. had selected the same individuals, then they would all be right handed. In the end, statistically speaking the majority of the human population is right handed (86.2%) (Spiegler and Yeni-Komshian, 1983). In a study focusing on the palm region, it has been found that handedness has a significant influence on bacterial communities (Fierer *et al.*, 2008). Although both hands have a similar overall diversity, the composition of the bacterial communities are significantly different. It is speculated that this is due to either differences in skin environmental conditions (sebum production, salinity, and hydration) or simply due to the hands coming into contact with different types of environmental surfaces at a different frequency. Taking the similarities into account, each hand still carries a distinct bacterial signature through different bacterial communities. It is believed that two hands of the same person could be linked through common bacterial communities even though on average these communities shared only 17% of their phylotypes demonstrating how each individual carries a massive amount of heterogeneity in skin bacterial communities. Although bacterial communities are not uniform across the entire body, the skin surfaces that are closer in proximity may carry similar bacterial communities. On average, the dominant hand carried a higher percentage of sequences than the non-dominant hand, but not by a wide margin (Fierer *et al.*, 2008). From this palm study, it can be inferred that the bacterial communities between fingers should be more similar than not in at least bacterial diversity. This would indicate that the difference in handedness when only looking at the sequence abundance and not evenness may be less important and cannot be used as an explanation for the increased abundance for either hand. Never the less, it will be assessed more closely as to what differences can be seen on handedness. Also, from this study, we have little reason to believe that two adjacent fingers would have drastically different bacterial communities and therefore should have similar results of sequence abundance. This will also be studied further to see if the data hints at something else. It is also important to note that other studies which observed high intra-personal variability between left and right hands on a several month time scale considered the phylotypes that were present on each hand to not be significantly correlated at the species level (Caporaso *et al.*, 2011). This would indicate that any keys touched by both hands on the scale of months (assuming that the individuals owned their keyboards for that long) could show a much higher sequence abundance. It is also interesting to note that the technique used for this study, swabbing, was found to be effective but that samples from a single individual were no more similar to each other than those between individuals (Rosenthal *et al.*, 2014). This further supports the previous study that keys should have different sequences swabbed off of them depending on the hand. Swabbing is still considered the best sampling method when it come to assessing transient bacterial populations (Zapka *et al.*, 2017). Currently there has been no differences in the types of bacteria found between swabbing and scrapping (Edmonds-Wilson *et al.*, 2015). Another study brings up the concept that the presence of other microorganisms in the skin microbiota may affect the growth or migration of new colonizers (Rosenthal *et al.*, 2013). To take it one step further, microorganisms already on the keyboard keys may present a threat to the new microorganisms being introduced by each new typing session of the owner. This may cause different levels of sequences per key and its frequency of use is less important because it involves multiple organisms competing with one another and if the most fit organism has its way, then the key will have minimal sequence abundance. Also, it is not known if the sequences are resident or transient bacteria since it was not mentioned if the keyboards were cleaned, then touched by a pre-washed hand, and then swabbed. Conceptually, transient bacteria would be better suited to fend off residential bacteria originating for the hand since they are accustomed to different environments.
+
+In answering this question we could better understand the bacterial variation per hand and finger.I failed to find any study that focuses on an individual finger's microbiome. Such findings could be applied to hand washing, since it could help to pin down which finger tends to be more contaminated or just neglected what it comes to hygiene. This could lead into a better understanding of which hand or finger is more likely to transmit bacteria onto another surface or person. Sequencing is expensive, and if the goal is to find as many human microbes as possible in one single area that is prone to human interaction, a focus on a single finger would be ideal. In all, understanding the human microbiome can lead to health revolutions, and if there is an interest in hands, an area that heavily interacts with its environment, then the fingers on an individual level should be investigated.
+
+Methods
+=======
+
+Sample origin and sequencing
+----------------------------
+
+For the Fierer et al. sample collection, they swabbed each individual key of three personal computer keyboards (n=25-30 keys per board) for ten seconds each. The swabs were cotton-tipped and previously autoclaved that were pre-moistened with a sterile solution. The skin of the ventral surface of the distal joint of each fingertip of the owner of the keyboard was also swabbed. These computers and their respective keyboards were primarily only used by the respective owner. When the individuals were sampled, they were healthy and had refrained from taking antibiotics in the past 6 months and were 20-35 years old. The keyboards were left untouched for half an hour before being swabbed and within ten minutes of that the fingers were swabbed. They took samples from 15 other space bars as to compare them to the initial sampling. All swab samples were stored at -80 C for less than 1 week before DNA extraction. For the DNA extraction, genomic DNA was extracted from the swabs using the MO BIO PowerSoil DNA Isolation kit. Each sample was frozen, incubated, shaken (MO BIO vortex adapter), amplified (using previous optimized primer set), placed in a PCR with reverse primers of HotMasterMix (5 PRIME), denatured, replicated with amplicons which were then pooled and visualized on agarose gels using SYBR Safe DNA gel stain. The amplicons wee then cleaned with the UltraClean-htp 96-well PCR Clean-up kit. Amplicon DNA concentrations were measured using the Quant-iTPicoGreendsDNAreagentandkit. They precipitated the final pool of DNA on ice and solutions and centrifuged it. The supernatant pellet was washed, centrifuged, then air dried and then re-suspended in nuclease free water. Pyrosequencing was carried out on a 454 Life Sciences Genome Sequencer FLX instrument by the Environmental Genomics Core Facility at the University of South Carolina. They believe to have found that this process can potentially be used as a forensic metric since the communities matched up well with the corresponding individuals swabbed.
+
+Computational
+-------------
+
+### Starting the project and pre-existing code
+
+In order to retrieve this data set I forked and cloned the repository to my github DerekNewberger-analysis-report-01-amplicons from the class repository. Using RStudio I modified the Analysis\_Report\_01\_amplicons.Rmd file where there were pre-existing chunks of code. The code installed the necessary libraries (dplyr, tidyr, knitr, ggplot2, citr, dada2, seqinr, mctoolsr, and phyloseq). The sequences longer than 300 base pairs were filtered and trimmed since the quality Appeared to suffer after 200 base pairs. We used build error models from each of the samples to learn of the possible error rates. Using derepfastq we removed any sequences that were duplicates which removed around half of the sequences we had remaining in the data set. Using dada and recommendations found on github or 454 data we adjusted the parameters and gave the HOMOPOLYMER\_GAP\_PENALTY a -1 since 454 sequencing has a difficulty dealing with this aspect of sequencing (Callahan *et al.*, 2016). A ‘site by species matrix’ was made, and it formed a table that instead of species, used the actual sequence as the “species” name. We then searched for and then removed chimeras using removeBimeraDenovo. Since the sampling method used was swabbing different surfaces and not an isolation DNA extraction technique, there is a chance that multiple sequences from different organisms were fused together. We built a phylogeny using the cleaned data and assigned them a taxonomy to each sequence variant based on a supplied training set of known sequences. We used the Ribosomal Database Project reference taxonomy to assign taxonomy to unknown sequences. There is code that can build a phylogenetic tree using a phyloseq object from dada2 outputs (Cole *et al.*, 2008; McMurdie and Holmes, 2013).
+
+### Constructing the code for the figures
+
+In the pre-existing code Dr. Zimmerman made the phyloseq\_obj, a phyloseq class object containing information on the sequence abundance of computer keyboard keys. He then used phyloseq\_obj to make a bar plot of the sequence abundance for all sample sources.
+
+We created a phyloseq class object, named phyloseq\_obj\_qu, which contained a subset of the data from phyloseq\_obj for which only the Qkey and the Ukey were the sample source (sample\_source). We then used the phyloseq\_obj\_qu to create a bar plot comparing the sequence abundances of the Qkey and the Ukey. We then used that same method to compare Lkey and Skey, Gkey and Hkey, Ekey and Okey. For on figure we compared the Q, A, and Z keys.
+
+We used psmelt to combine the tables in phyloseq\_obj into a singular table called phyloseq\_table. Using phyloseq\_table, we grouped by sample source to make a new column called sumAbundance in phyloseq\_abundance\_by\_key. Then, to separate all the left-handed keys, the right handed keys, and the keys that are neither, we used ifelse. Using the “True” and “False” method we made a vector which lists off the keys and places then in either L, R, B, or NA. Using phyloseq and ggplot we then made a box plot that filtered for only left and right-handed letter keys to see how their sequence abundances compared once added together. Once again using phyloseq\_abundance\_by\_key we used phyloseq and ggplot to make bar plot of the mean sum abundance filtering for left handed, right handed, and both handed keys.
+
+Results
+=======
+
+``` r
+# Be sure to install these packages before running this script
+# They can be installed either with the intall.packages() function
+# or with the 'Packages' pane in RStudio
+
+# load general-use packages
+library("dplyr")
+library("tidyr")
+library("knitr")
+library("ggplot2")
+
+# this package allows for the easy inclusion of literature citations in our Rmd
+# more info here: https://github.com/crsh/citr
+# and here:
+# http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
+library("citr")
+
+# These are the primary packages well use to clean and analyze the data
+# this package needs to be installed from bioconductor -- it's not on CRAN
+# see info here: https://benjjneb.github.io/dada2/dada-installation.html
+library("dada2")
+
+# This to export a fasta of our final denoised sequence variants
+library("seqinr")
+
+# To install this you have to install from GitHub
+# See more info here: https://github.com/leffj/mctoolsr
+# run this -- install.packages("devtools")
+# and then this -- devtools::install_github("leffj/mctoolsr")
+library("mctoolsr")
+
+# And this to visualize our results
+# it also needs to be installed from bioconductor
+library("phyloseq")
+```
+
+``` r
+# NOTE: Much of the following follows the DADA2 tutorials available here:
+# https://benjjneb.github.io/dada2/tutorial.html
+# Accessed October 19, 2017
+
+# set the base path for our input data files
+path <- "data/raw_data"
+
+# Sort ensures samples are in order
+filenames_forward_reads <- sort(list.files(path, pattern = ".fastq"))
+
+# Extract sample names, assuming filenames have format: SAMPLENAME.fastq
+sample_names <- sapply(strsplit(filenames_forward_reads, "\\."), `[`, 1)
+
+# Specify the full path to each of the filenames_forward_reads
+filenames_forward_reads <- file.path(path, filenames_forward_reads)
+```
+
+We can see from the quality profiles that most reads tend to get pretty bad in quality after around 200 bases.
+
+After removing chimeras, we were left with 99.97% of our cleaned reads.
+
+``` r
+# we want to export the cleaned, trimmed, filtered, denoised sequence variants
+# so that we can build a phylogeny - we'll build the phylogeny outside of R
+# but we need the fasta file to do so. We keep the names of each sequence as the
+# sequence itself (which is rather confusing), because that's how DADA2 labels
+# it's columns (e.g. 'species')
+# function taken from https://github.com/benjjneb/dada2/issues/88
+export_taxa_table_and_seqs <- function(sequence_table_nochim,
+                                       file_seqtab,
+                                       file_seqs) {
+  seqtab_t <- as.data.frame(t(sequence_table_nochim)) # transpose to data frame
+  seqs <- row.names(seqtab_t) # extract rownames
+  row.names(seqtab_t) <- seqs # set rownames to sequences
+  outlist <- list(data_loaded = seqtab_t)
+  mctoolsr::export_taxa_table(outlist, file_seqtab) # write out an OTU table
+  seqs <- as.list(seqs)
+  seqinr::write.fasta(seqs, row.names(seqtab_t), file_seqs) # write out fasta
+ }
+
+# run the function, with the names of the files we want it to create
+# and where to put them
+export_taxa_table_and_seqs(sequence_table_nochim,
+                           "output/sequence_variants_table.txt",
+                           "output/sequence_variants_seqs.fa")
+```
+
+``` r
+# assigns taxonomy to each sequence variant based on a supplied training set
+# made up of known sequences
+ taxa <- assignTaxonomy(sequence_table_nochim,
+                       "data/training/rdp_train_set_16.fa.gz",
+                       multithread = FALSE,
+                       tryRC = TRUE) # also check with seq reverse compliments
+```
+
+``` r
+# read in the phylogeny, which was created from the fasta exported above
+# in Geneious by aligning the sequences with MAFFT and then building a
+# Maximum-Likelihood tree with RAxML
+ tree_in <- read_tree("output/sequence_variants_MAFFT_FastTree.newick")
+
+# Next we want to read in the metadata file so we can add that in too
+# This is not a csv file, so we have to use a slightly different syntax
+# here the `sep = "\t"` tells the function that the data are tab-delimited
+# and the `stringsAsFactors = FALSE` tells it not to assume that things are
+# categorical variables
+metadata_in <- read.table(paste0("data/metadata/",
+                    "fierer_hand_bacteria_SRA_study_ERP022626_SraRunTable.txt"),
+                          sep = "\t",
+                          header = TRUE,
+                          stringsAsFactors = FALSE,
+                          row.names = 6) # sets sample IDs to row names
+
+# Construct phyloseq object (straightforward from dada2 outputs)
+phyloseq_obj <- phyloseq(otu_table(sequence_table_nochim,
+                                   taxa_are_rows = FALSE), # sample-spp matrix
+                         sample_data(metadata_in), # metadata for each sample
+                         tax_table(taxa), # taxonomy for each sequence variant
+                         phy_tree(tree_in)) # phylogeny from sequence variants
+```
+
+``` r
+# bar plot of sample source (keyboard key or finger) and Abundance of sequences
+plot_bar(phyloseq_obj, x = "sample_source", #the phyloseq was created above
+         title = "Sequence abundance for all sample sources")
+```
+
+![](Analysis_Report_01_amplicons_files/figure-markdown_github/sample-source-sequence-abundance-barplot-1.png)
+
+**Figure 1**: Abundance of sequences within the sample\_source(s). We see how the abundance of sequences on the each key are not all even. This sparked interest on the difference of abundance between the U and Q keys. From here a focus on the hand or finger used for each key will be compared.
+
+``` r
+# bar plot of samples from Q and U keys and Abundance of sequences
+phyloseq_obj_qu <- subset_samples(phyloseq_obj, # we made a new phyloseq object
+                                  sample_source == "Ukey" |
+                                    sample_source == "Qkey")
+plot_bar(phyloseq_obj_qu, x = "sample_source",
+         # we used plot bar because we had a phyloseq class
+         title = "Sequence abundance on Q and U keys")
+```
+
+![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-abundance-for-q-and-u-keys-barplot-1.png)
+
+**Figure 2**: Abundance of sequences within the sample\_source of the Ukey and Qkey. Since in the English language there are very few words and no common words that use the letter "Q" without "U" it was unexpected to see how the ideally more isolated Qkey having double the amount of sequence abundance. From this it will be investigated to see if left handed keys carry a higher abundance than right keys or the type of finger used is the cause.
+
+``` r
+# bar plot of samples from A, Q, and Z keys and Abundance of sequences
+phyloseq_obj_aqz <- subset_samples(phyloseq_obj, # we made a new phyloseq object
+                                  sample_source == "Qkey" |
+                                    sample_source == "Akey" |
+                                    sample_source == "Zkey")
+plot_bar(phyloseq_obj_aqz, x = "sample_source",
+         title = "Sequence abundance on A, Q, and Z keys")
+```
+
+![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-abundance-for-a-q-z-keys-barplot-1.png)
+
+**Figure 3**: Abundance of sequences within the sample\_source of the Akey, Qkey, and Zkey. All three letter keys that the left little finger interacts with were plotted together. This was to see if frequency could be used to be used as a predictor for sequence abundance. Here, the relative frequency pairs up with the correct relative sequence abundance.
+
+``` r
+# bar plot of samples from L and S keys and Abundance of sequences
+phyloseq_obj_sl <- subset_samples(phyloseq_obj, # we made a new phyloseq object
+                                  sample_source == "Skey" |
+                                    sample_source == "Lkey")
+plot_bar(phyloseq_obj_sl, x = "sample_source",
+         title = "Sequence abundance on L and S keys")
+```
+
+![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-abundance-for-s-and-l-keys-barplot-1.png)
+
+**Figure 4**: Abundance of sequences within the sample\_source of the Skey and Lkey. To separate handedness and to keep the fingers consistent, letters S and L were selected. It shows that the Lkey, which is on the right side of the keyboard, has a higher abundance. The data for the keys touched by the ringer-finger shows how either hand can led to a higher abundance. It is important to note that the Qkey had a higher abundance even though it is likely to be exposed or touched by the same finger that touches the Skey.
+
+``` r
+# bar plot of samples from G and H keys and Abundance of sequences
+phyloseq_obj_gh <- subset_samples(phyloseq_obj, # we made a new phyloseq object
+                                  sample_source == "Gkey" |
+                                    sample_source == "Hkey")
+plot_bar(phyloseq_obj_gh, x = "sample_source",
+         title = "Sequence abundance on G and H keys")
+```
+
+![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-abundance-for-g-and-h-keys-barplot-1.png)
+
+**Figure 5**: Abundance of sequences within the sample\_source of the Gkey and Hkey. As shown, the Gkey as on the left side has a higher abundance. The index fingers also show a higher overall abundance than the previous graphs.
+
+``` r
+# bar plot of samples from E and O keys and Abundance of sequences
+phyloseq_obj_eo <- subset_samples(phyloseq_obj, # we made a new phyloseq object
+                                  sample_source == "Ekey" |
+                                  sample_source == "Okey")
+plot_bar(phyloseq_obj_eo, x = "sample_source",
+                                  title = "Sequence abundance on E and O keys")
+```
+
+![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-abundance-for-e-and-o-keys-barplot-1.png)
+
+**Figure 6**: Abundance of sequences within the sample\_source of the Ekey and Okey. The Ekey and the Okey were selected for they are the most frequently used key on their respective side. Both the use and the abundance of the Ekey are greater than the Okey. Only one of our graphs show that a key on the right side had a greater abundance.
+
+``` r
+# box plot of left and right handed keys sequence abundance
+phyloseq_table <- psmelt(phyloseq_obj)
+# we used used psmelt to combine the tables in phyloseq_obj into phyloseq_table
+# this is to combine everything into one table
+phyloseq_abundance_by_key <- phyloseq_table %>%
+group_by(sample_source) %>%
+# we were only interested in the letter keys
+summarize(sumAbundance = sum(Abundance))
+# we added all of the abundances so that we could see a handed trend
+phyloseq_abundance_by_key$hand <-
+  ifelse(phyloseq_abundance_by_key$sample_source %in%
+       c("Qkey", "Wkey", "Ekey", "Rkey", "Akey", "Skey", "Dkey",
+         "Fkey", "Gkey", "Zkey", "Xkey", "Ckey", "Vkey", "Tkey",
+         "Bkey"), "L",
+       ifelse(phyloseq_abundance_by_key$sample_source %in%
+              c("Ykey", "Ukey", "Ikey", "Okey", "Pkey", "Hkey", "Jkey",
+                "Lkey", "Nkey", "Mkey"), "R",
+              ifelse(phyloseq_abundance_by_key$sample_source
+                     == "Space_bar", "B", "NA")
+              )
+       )
+# the if else was a little complicated in that we had to make a vector c to
+# then list out what we deemed as true or false
+phyloseq_abundance_by_key_lr <- phyloseq_abundance_by_key %>%
+  filter(hand == "L" | hand == "R")
+# we have the last if else just in case we wanted to see it later and we have
+# already constructed the code for it
+ggplot(phyloseq_abundance_by_key_lr, aes(y = sumAbundance, x = hand)) +
+geom_boxplot() + ggtitle("Comparing abundance of sequences per hand")
+```
+
+![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-abundance-between-left-and-right-hand-keys-boxplot-1.png)
+
+**Figure 7**: Comparing abundance of sequences of the left and right hands. Instead of comparing letter by letter, this box plot shows the general trend that the left keys had a higher sequence abundance.
+
+``` r
+# bar plot of mean abundance for left and right handed keys
+
+phyloseq_abundance_by_key_lrb <- phyloseq_abundance_by_key %>%
+  filter(hand == "L" | hand == "R" | hand == "B") %>%
+  # we still did not add NA but wanted to see the mean abundance on both as well
+  group_by(hand) %>%
+summarize(meanSumAbundance = mean(sumAbundance))
+# we took the mean to better understand what the typical abundance is for each
+ggplot(phyloseq_abundance_by_key_lrb, aes(x = hand,
+                                              y = meanSumAbundance)) +
+  geom_col() +
+ ggtitle("Comparing mean abundance of sequences left and right handed keys")
+```
+
+![](Analysis_Report_01_amplicons_files/figure-markdown_github/comparing-mean-abundance-between-handed-keys-barplot-1.png) **Figure 8**: Comparing abundance of sequences for left and right handed keys and the space bar. The space bar has the highest mean abundance while the trend of the left hand having a higher sequence abundance can still be observed. The difference between the mean abundance of either hand is dwarfed when taking into consideration the keys that are touched by both.
+
+In class, Dr. Zimmerman made a bar plot showing the sequence abundance on each sample source. Observing an overall difference between the keys was as expected. However, as shown in Figure 1, there was a difference in the abundance of sequences on the Qkey and the Ukey. A bar plot was then made to eliminate distractions and focus on the Qkey and the Ukey. In Figure 2, the Qkey almost reaches the 2500 mark on the abundance axis meanwhile the Ukey is at 1000. The Qkey has more than double the amount of sequence abundance than the Ukey when the Ukey has more than double the frequency as stated before (Solso and King, 1976). To focus on the keys touched primarily by the little finger, Figure 3 shows the sequence abundance for the Akey, Qkey, and the Zkey. The relative frequencies and sequence abundances match. To compare the sequence abundance of the left little finger and to inquire about handedness, Figure 4 was created. Here we see that the Skey, which is touched by the ring-finger on the left hand, has a lower sequence abundance than the Lkey that is touched by the ring-finger on the right hand. Neither key had a greater sequence abundance than the Qkey even though they are on the home and have a higher frequency (Solso and King, 1976). In Figure 5 I compared the Gkey and the Hkey to see if there was a difference in sequence abundance for the index finger based off of handedness. Both keys had a higher sequence abundance than any key previously focused on with the Gkey, which is on the left side, having a higher sequence abundance by almost a 1000. The most frequently used letter key on the left side was compared to the key on the right side since handedness appears to have a trend. In Figure 6 the Ekey shows a 50% higher sequence abundance than the Okey. Both are vowels that are frequently used and are on the back row. The Ekey is used by the left middle finger and the Okey is used by the same finger as the Lkey, the ring-finger on the right hand. To further inspect how handedness could also be used as a predictor for sequence abundance, a box plot was made which encompasses all the letter keys on the left to those on the right. Maintaining the consistency observed in the other figures, Figure 7 shows how the left handed letter keys have a higher sequence abundance than the right. Lastly, Figure 8 shows the mean abundance of sequences between left and right handed letter keys along with the space bar. The space bar, which is used by both hands, showed a much higher sequence abundance than expected. However, I was advised to consult the metadata and found that three females were included in the space bar sample.
+
+Discussion
+==========
+
+To my knowledge, physical contact must be the primary way a computer keyboard in its traditional environment acquires bacteria. Although bacteria are everywhere, like any organism, they flourish under conditions that are fit for them. Either that or the exposure to a surface is so consistently repetitive that they are either replenished or gain nutrients from such an event. My hypothesis is that as frequency increases, so does the sequence abundance per key. In many ways this hypothesis was supported, although my first thought while looking at Figure 1 was how could the Ukey have fewer sequence abundance than the Qkey. We will first discuss how the results met with our expectations based on the mechanics of the common languages used in Colorado, the QWERTY keyboard, and previous studies on the hand microbime. Then we will review the discrepancies within the data that alluded to possible alternate outcomes. In all, I believe that the hypothesis was supported, but frequency was not the only indicator found to be able to predict sequence abundance.
+
+In short, the frequency of the use of the key could be used as a predictor of sequence abundance, but handedness was incidentally found as well. In Figure 1 we see that the sequence abundance is not even across all the keys. This is as predicted since each key has its own frequency of use. Looking at a glance, it seems that most letters are within their respected use. Something that I did not consider until later was how there would be a maximum or limit to the observed sequence abundance. No key reaches above the 4000 mark. It has been found that on average, less than 3200 sequences are found on each hand (Fierer *et al.*, 2008). Our data is the sum of three individuals, which is interesting to see that the maximum is so low. The cause of this is probably due to the maximum of transferable bacteria from a male human hand onto an object. As previously mentioned, it is believed that on our hands there are residential bacteria and transient bacteria. Perhaps the majority of the sequences we see on the keyboards are transient or transferable bacteria, a number that is much smaller than the overall amount of bacteria on the hands. Although initially plotted due to observing the questionably contaminated Qkey, Figure 3 supports the concept of frequency of key use to sequence abundance, and since ideally it is only used by the left little finger, we should see more similarity if sequence abundance was based on the type of finger used. The type of finger used could have been an indicator for sequence abundance since each finger could have a higher contamination than the others. This could be due to neglect in hand washing or more probable, that the finger in question interacts with the environment more frequently. In a world dominated by right handed people, the left little finger should be the finger that has the least contamination or at least have an observable hindrance in the amount of sequences found on the keys it touches. However, out data does not support this and shows that the little finger on the left hand is just as efficient of a bacterial carrier than any other finger. To try a different approach to frequency of use, Figure 4 shows how keys that are on the home row where the typists hands lay at rest, have a slightly similar sequence abundance. This again supports the frequency of use hypothesis. A similar situation is observed for the Gkey and the Hkey, with the left sided key (G) having a higher sequence abundance. Taking it to the extreme, the most frequently used keys were compared. Although the Ekey is used a lot more frequently, the general pattern of the keys reaching a maximum number of sequence abundance was not reached by the Okey, which instead sits right at the 2000 count. It can be said that only the Ekey supports the frequency of use as a predictor. As a whole, the keys Plated in the bar plots do not show the trend that the back row keys are the most frequently used, followed by the home row, and lastly the front row. By looking at Figure 1, it would appear that there are keys that go in line with the row frequency, there are plenty of keys that do not match up. It has been said that 56% of the typing on a QWERTY keyboard is focused on the left side, and we get a concept of that in Figure 7. The left handed keys have a higher sequence abundance, but not by an extraordinary margin. Figure 8 continues to support the concept of using handedness as an indicator of sequence abundance. All of our figures with the exception of Figure 4, support the notion that there are more bacteria on the left side of the keyboard. In all, the type of finger or row did not seem to be an indicator of sequence abundance, but handedness and the frequency of the key could be used as indicators.
+
+Although mostly straight forward, there are a few times where the data did not match up with expectations or the literature. The first expectation noticed was how the much less used Qkey had such a high abundance. When compared to other keys touched by the little finger it behaved relatively appropriately, but the abundances were high considering the environmental interaction the little finger of a left hand experiences. It would have been interesting to see the sequence abundance of a tilde, tab, caps lock, and a correctly grouped left shift keys. Additionally, it would have been interesting to have more data on keys that the little finger on the right hand interacts with. Although the left side of the keyboard is used more, frequently used keys to the right should have a higher count of sequence abundance and the less frequently used keys on the left should have a lower count of sequence abundance. This was more notable when comparing the Ekey to the Okey. True, the Ekey is significantly used more, but the most frequently used key on the right side was dwarfed by it, which shouldn't be the case. As mentioned earlier, there seemed to be a limit for the count of sequence abundance on these keys, and it is a very curious thing that the Okey did not get close to this 4000 count limit as other, less frequently used keys did. A silly concept was that maybe microbes on the heavily used keys were "crushed", but after a quick read of how they can withstand high pressure (Timson and Short, 1965) and that finger ridges are large for them to probably go untouched, this is found to be invalid. I could not find any studies that looked at wiping bacteria off due to repetitive friction, and so this was also believed to be invalid. One concept is to look at these microbiomes on human hands as a continuous battle ground. The battle ground then switches when the microbes get transferred to this colder, less nutritious, drier, and potentially more hostile world that is the computer keyboard. Especially for those residential microbes that are comfortable with our immune system, a keyboard would not be an ideal location. So even if some of these keys were touched repeatedly, if a semi-stable and highly competitive microbiome grabs hold, then the diversity might reflect the number of microbes being presented to the area. To discuss one last discrepancy, Figure 8 show the space bar, a key potentially used by both hands, dominates the figure. However, as pointed out to me, the metadata shows how the space bar includes samples from three females. Since females tend to carry even more microbes on their hands due to a lower pH and other factors (Fierer *et al.*, 2008), the results of this figure is no longer surprising, but just frustrating.
+
+To summarize, only the frequency of use was expected to be an indicator of the count of sequence abundance, but handedness was also a strong predictor. There were some discrepancies within the data, and only some explanations could be drawn up to explain these occurrences. From the data set, there is not clear indication that any type of finger causes a higher sequence abundance.
+
+Sources Cited
+=============
+
+Betts-LaCroix,J. (2008) Keyboard with variable-sized keys.
+
+Callahan,B.J. *et al.* (2016) DADA2: High-resolution sample inference from illumina amplicon data. *Nature Methods*, **13**, 581–583.
+
+Caporaso,J.G. *et al.* (2011) Moving pictures of the human microbiome. *Genome biology*, **12**, R50.
+
+Choi,M.S. (1996) Computer with separate left hand and right hand operated keyboard units.
+
+Cole,J.R. *et al.* (2008) The ribosomal database project: Improved alignments and new tools for rRNA analysis. *Nucleic acids research*, **37**, D141–D145.
+
+Edmonds-Wilson,S.L. *et al.* (2015) Review of human hand microbiome research. *Journal of dermatological science*, **80**, 3–12.
+
+Fierer,N. *et al.* (2008) The influence of sex, handedness, and washing on the diversity of hand surface bacteria. *Proceedings of the National Academy of Sciences*, **105**, 17994–17999.
+
+McMurdie,P.J. and Holmes,S. (2013) Phyloseq: An r package for reproducible interactive analysis and graphics of microbiome census data. *PLoS ONE*, **8**, e61217.
+
+Noyes,J. (1983) The qwerty keyboard: A review. *International Journal of Man-Machine Studies*, **18**, 265–281.
+
+Potowski,K. and Carreira,M. (2010) Spanish in the usa. *Language diversity in the United States*, 66–80.
+
+Rosenthal,M. *et al.* (2013) Healthcare workers’ hand microbiome may mediate carriage of hospital pathogens. *Pathogens*, **3**, 1–13.
+
+Rosenthal,M. *et al.* (2014) Impact of technical sources of variation on the hand microbiome dynamics of healthcare workers. *PloS one*, **9**, e88999.
+
+Solso,R.L. and King,J.F. (1976) Frequency and versatility of letters in the english language. *Behavior Research Methods & Instrumentation*, **8**, 283–286.
+
+Spiegler,B.J. and Yeni-Komshian,G.H. (1983) Incidence of left-handed writing in a college population with reference to family patterns of hand preference. *Neuropsychologia*, **21**, 651–659.
+
+Timson,W. and Short,A. (1965) Resistance of microorganisms to hydrostatic pressure. *Biotechnology and Bioengineering*, **7**, 139–159.
+
+Zapka,C. *et al.* (2017) Comparison of standard culture-based method to culture-independent method for evaluation of hygiene effects on the hand microbiome. *MBio*, **8**, e00093–17.
